@@ -1,4 +1,4 @@
-export const about = {
+const about = {
   resume:{
     title:"Summary",
     resume:"Developer with focus on web and mobile development. Experience and practice in full-stack development, using Python on the backend for creating REST APIs, and utilizing React, React Native, and Expo for the frontend. Also leveraging GitHub Actions for pipeline development, knowledge of infrastructure on GCP, and Docker for service delivery, along with SQL Server and MySQL databases."
@@ -82,6 +82,32 @@ export const about = {
   }
 }
 
+const contact = {
+  form:{
+    title:"Form",
+    name:{
+      title:"Full name",
+      placeholder:"Fill in the field with your full name"
+    },
+    email:{
+      title:"Email",
+      placeholder:"exemplo@exemplo.com.br"
+    },
+    message:{
+      title:"Message",
+      placeholder:"Type your message to the developer"
+    },
+    status:{
+      erro:"Blank field!"
+    }
+  },
+  submit:{
+    title:"Send email",
+    status_ok:"Email sent successfully!",
+    status_not_ok:"Error sending email"
+  }
+}
+
 export default {
     translations: { 
       header: {
@@ -89,9 +115,11 @@ export default {
       },
       pages:{
         home:"Home",
-        about:"Sobre"
+        about:"About",
+        contact:"Contact"
       },
-      about:about
+      about:about,
+      contact:contact
     }
 }
 

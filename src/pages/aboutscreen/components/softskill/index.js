@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Box, Divider, Typography } from '@mui/material'
+import { Box, Card, Divider, Typography } from '@mui/material'
 
 export default function SoftSkillFunction(){
 
@@ -12,6 +12,7 @@ export default function SoftSkillFunction(){
         <Box
         m={2}
         >
+            <Card>
             {
                 softskill.map((item) => (
                     <>
@@ -26,6 +27,7 @@ export default function SoftSkillFunction(){
                     </>
                 ))
             }
+            </Card>
         </Box>
     )
 

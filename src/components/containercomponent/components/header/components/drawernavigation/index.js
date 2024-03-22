@@ -12,6 +12,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -134,6 +135,14 @@ export default function DrawerNavigation({OpenDrawer,SetOpenDrawer,drawerWidth})
                 Local='/about'
                 Open={OpenDrawer}
                 Icone={InfoIcon}
+                />
+                <ButtonsNavigation
+                Nome={<Translator
+                    path="pages.contact"
+                />}
+                Local='/contact'
+                Open={OpenDrawer}
+                Icone={ContactPageIcon}
                 />
             </List>
         </Drawer>

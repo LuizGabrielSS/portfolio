@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Card, Typography } from '@mui/material'
 
 import ContainerComponent from '../../components/containercomponent'
 import Translator from '../../components/trasnlatecomponent'
@@ -22,11 +22,13 @@ export default function AboutScreen(){
                 flexWrap= "wrap"
                 p={1}
                 >
-                    <Typography paragraph>
-                        <Translator
-                            path="about.resume.resume"
-                        />
-                    </Typography>
+                    <Card>
+                        <Typography paragraph>
+                            <Translator
+                                path="about.resume.resume"
+                            />
+                        </Typography>
+                    </Card>
                 </Box>
             </ShowMoreFunction>
             <ShowMoreFunction
@@ -74,11 +76,18 @@ export default function AboutScreen(){
                                 path="about.experience.personal.intership.title"
                             />}
                         >
-                            <Typography>
-                                <Translator
-                                    path="about.experience.personal.intership.descrption"
-                                />
-                            </Typography>
+                            <Box
+                            flexWrap= "wrap"
+                            p={1}
+                            >
+                                <Card>
+                                    <Typography>
+                                        <Translator
+                                            path="about.experience.personal.intership.descrption"
+                                        />
+                                    </Typography>
+                                </Card>
+                            </Box>
                         </ShowMoreFunction>
                     </ShowMoreFunction>
                 </>
