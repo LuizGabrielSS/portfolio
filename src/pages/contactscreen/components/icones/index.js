@@ -3,7 +3,6 @@ import { Box, IconButton, Tooltip } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function IconeComponent({Titulo,Icone,link}){
 

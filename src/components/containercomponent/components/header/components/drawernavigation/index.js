@@ -13,6 +13,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import SourceIcon from '@mui/icons-material/Source';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -119,7 +120,6 @@ export default function DrawerNavigation({OpenDrawer,SetOpenDrawer,drawerWidth})
             </DrawerHeader>
             <Divider/>
             <List>
-            
                 <ButtonsNavigation
                 Nome={<Translator
                     path="pages.home"
@@ -127,6 +127,14 @@ export default function DrawerNavigation({OpenDrawer,SetOpenDrawer,drawerWidth})
                 Local='/'
                 Open={OpenDrawer}
                 Icone={HomeIcon}
+                />
+                <ButtonsNavigation
+                Nome={<Translator
+                    path="pages.project"
+                />}
+                Local='/project'
+                Open={OpenDrawer}
+                Icone={SourceIcon}
                 />
                 <ButtonsNavigation
                 Nome={<Translator

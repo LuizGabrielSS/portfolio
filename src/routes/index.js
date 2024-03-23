@@ -6,6 +6,7 @@ import NotFoundScreen from '../pages/notfound'
 import HomeScreen from '../pages/homescreen'
 import AboutScreen from '../pages/aboutscreen'
 import ContactScreen from '../pages/contactscreen'
+import ProjectScreen from '../pages/projectscreen'
 
 export default function RoutesFunction(){
 
@@ -36,6 +37,12 @@ export default function RoutesFunction(){
                     path="/contact"
                     element={
                         <ContactScreen/>
+                    }
+                />
+                <Route
+                    path="/project"
+                    element={
+                        <ProjectScreen/>
                     }
                 />
             </Routes>

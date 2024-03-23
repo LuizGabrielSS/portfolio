@@ -8,6 +8,8 @@ import ShowMoreFunction from './components/showmore'
 import ProfessionalFunction from './components/professional'
 import SoftSkillFunction from './components/softskill'
 import HardSkillFunction from './components/hardskill'
+import SchoolFunction from './components/school'
+import CertificatesFunction from './components/certificate'
 
 export default function AboutScreen(){
 
@@ -30,6 +32,20 @@ export default function AboutScreen(){
                         </Typography>
                     </Card>
                 </Box>
+            </ShowMoreFunction>
+            <ShowMoreFunction
+                Nome={<Translator
+                    path="about.school.academic.title"
+                />}
+            >
+                <SchoolFunction/>
+            </ShowMoreFunction>
+            <ShowMoreFunction
+                Nome={<Translator
+                    path="about.school.certificate.title"
+                />}
+            >
+                <CertificatesFunction/>
             </ShowMoreFunction>
             <ShowMoreFunction
                 Nome={<Translator

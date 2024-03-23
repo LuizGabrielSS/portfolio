@@ -79,6 +79,89 @@ const about = {
         descrption:"Estive no país por breve periodo durante o meu intercambio no ensino medio para aprender sobre a lingua e a cultura chinesa, o que expandiu tanto meu conhecimento pessoal, quanto o meu conhecimento profissional"
       }
     }
+  },
+  school:{
+    academic:{
+      title:"Escolar",
+      high:{
+        title:"Colegio Estadual Matematico Joaquim Gomes de Souza Intercultural Brasil - China",
+        time:"2017 - 2019"
+      },
+      graduation:{
+        title:"SUPERIOR DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
+        time:"2024 - 2025"
+      }
+    },
+    certificate:{
+      title:"Certificações",
+      button:"Ver certificado",
+      cursos:[
+        {
+          title:"Python",
+          cursos:[
+            {
+              title:"Django",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/degree-django-v224766-224766/certificate",
+            },
+            {
+              title:"Começando com Flask: framework web de Python",
+              url:"https://cursos.alura.com.br/degree/certificate/d4ca8fe7-e50e-45df-8450-607d5623771f"
+            },
+          ]
+        },
+        {
+          title:"Javascript",
+          cursos:[
+            {
+              title:"React JS",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/degree-react-js-123128/certificate"
+            },
+            {
+              title:"Gerencie estados em React com Redux",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/degree-react-gestao-estados-495634/certificate"
+            },
+            {
+              title:"Desenvolva seu primeiro app com React Native",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/degree-react-native-v419498-419498/certificate"
+            }
+          ]
+        },
+        {
+          title:"Certificações ISO",
+          cursos:[
+            {
+              title:"ISO - 31000:2018",
+              url:"https://certification-portal.sandbp.net/certificate-verification-page/1336A34D2-3223A87-312AA88/"
+            },
+            {
+              title:"ISO - 20000:2018",
+              url:"https://certification-portal.sandbp.net/certificate-verification-page/13369BEDD-3304768-312AA88/"
+            },
+            {
+              title:"ISO - 27001:2022",
+              url:"https://www.skillfront.com/certifications/SkillFront-SFE0164912932f04-49389931703773.pdf"
+            },
+          ],
+        },
+        {
+          title:"Outros",
+          cursos:[
+            {
+              title:"Segurança de software com OWASP",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/degree-owasp-43209/certificate"
+            },
+            {
+              title:"RPA com UiPath: Curso Prático - Aprenda do Zero",
+              url:"https://www.udemy.com/certificate/UC-001719a4-782f-4d90-9545-0dd63007eb99/"
+            },
+            {
+              title:"Alura",
+              url:"https://cursos.alura.com.br/user/luiz-samuel/fullCertificate/4a4d908f4ecced3732170c26d3b92516"
+            }
+          ]
+        }
+      ],
+    }
   }
 }
 
@@ -108,6 +191,10 @@ const contact = {
   }
 }
 
+const project = {
+
+}
+
 export default {
     translations: {
       header: {
@@ -116,10 +203,12 @@ export default {
       pages:{
         home:"Home",
         about:"Sobre",
-        contact:"Contato"
+        contact:"Contato",
+        project:"Projetos"
       },
       about:about,
-      contact:contact
+      contact:contact,
+      project:project
     }
   }
 
