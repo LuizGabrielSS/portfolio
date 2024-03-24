@@ -17,14 +17,11 @@ function IconeComponent({Titulo,Icone,link}){
                 <IconButton 
                 onClick={() => window.location.href = link}
                 size="large"
-                style={{
-                    color:"button"
+                sx={{
+                    color:"button.main"
                 }}
                 >
                     <Icone
-                    style={{
-                        color:"button"
-                    }}
                     />
                 </IconButton>
             </Tooltip>

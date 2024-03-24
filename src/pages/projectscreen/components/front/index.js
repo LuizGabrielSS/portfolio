@@ -23,8 +23,8 @@ function IconeComponent({Titulo,Icone,url}){
                 size="large"
                 >
                     <Icone
-                    style={{
-                        color:"button"
+                    sx={{
+                        color:"button.main"
                     }}
                     />
                 </IconButton> 

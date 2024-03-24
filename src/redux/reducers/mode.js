@@ -3,29 +3,36 @@ import { createSlice } from '@reduxjs/toolkit'
 const LightMode = {
     mode: 'light',
     primary:{
-        main:"#3333ff"
+        main:"#330080"
     },
     text:{
         main:"#000000",
-        secondary:"#404040"
+        secondary:"#404040",
+        translate:"#fff"
     },
     button:{
-        main:"#3333ff",
+        main:"#5c00e6",
+    },
+    icon:{
+        main:"#5c00e6",
     }
-    
 }
 
 const DarkMode = {
     mode: 'dark',
     primary:{
-        main:"#1a1a1a"
+        main:"#000080"
     },
     text:{
         main:"#fff",
-        secondary:"#808080"
+        secondary:"#808080",
+        translate:"#fff"
     },
     button:{
-        main:"#fff"
+        main:"#1a1aff"
+    },
+    icon:{
+        main:"#5c00e6",
     }
     
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Avatar, Box, MenuItem, Select } from '@mui/material'
+import { Avatar, Box, MenuItem, Select, Typography } from '@mui/material'
 import UsaVSG from "./usa.svg";
 import BraVSG from "./brasil.svg"
 
@@ -22,7 +22,10 @@ function ItemComponent({Imagem,Nome}){
         />
       </Box>
       <Box>
-        {Nome}
+        <Typography variant="body1" color="text.translate">
+          {Nome}
+        </Typography>
+        
       </Box>
     </Box>
   )

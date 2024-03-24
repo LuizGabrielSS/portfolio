@@ -41,6 +41,9 @@ function ProjetosCompoent({title,description,github}){
                             color="button" 
                             onClick={() => window.location.href = github}
                             size="large"
+                            sx={{
+                                color:"button.main"
+                            }}
                             >
                                 <GitHubIcon
                                 style={{
