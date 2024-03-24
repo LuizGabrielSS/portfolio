@@ -14,7 +14,9 @@ export default function ContactScreen(){
     const[StatusSnack,SetStatusSnack] = useState(false)
 
     return(
-        <ContainerComponent>
+        <ContainerComponent
+        title='pages.contact'
+        >
             <SnackFunction
             Mensagem={MensagemSnack}
             Open={OpenSnack}

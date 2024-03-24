@@ -5,7 +5,9 @@ import ContainerComponent from '../../components/containercomponent'
 export default function HomeScreen(){
 
     return(
-        <ContainerComponent>
+        <ContainerComponent
+        title='pages.home'
+        >
             <p>oi</p>
         </ContainerComponent>
     )

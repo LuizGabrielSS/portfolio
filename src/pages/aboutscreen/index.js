@@ -4,7 +4,7 @@ import { Box, Card, Typography } from '@mui/material'
 import ContainerComponent from '../../components/containercomponent'
 import Translator from '../../components/trasnlatecomponent'
 
-import ShowMoreFunction from './components/showmore'
+import ShowMoreFunction from '../../components/showmore'
 import ProfessionalFunction from './components/professional'
 import SoftSkillFunction from './components/softskill'
 import HardSkillFunction from './components/hardskill'
@@ -14,7 +14,9 @@ import CertificatesFunction from './components/certificate'
 export default function AboutScreen(){
 
     return(
-        <ContainerComponent>
+        <ContainerComponent
+        title='pages.about'
+        >
             <ShowMoreFunction
                 Nome={<Translator
                     path="about.resume.title"

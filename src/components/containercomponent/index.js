@@ -8,20 +8,16 @@ import LoadingScreen from './components/loading'
 import ErrorScreen from './components/error'
 import NetworkScreen from './components/network'
 import Header from './components/header'
+import TitleFunction from './components/title'
 
-export default function ContainerComponent({Loading=false,Status=200,children}){
+export default function ContainerComponent({Loading=false,Status=200,children,title=""}){
 
     const theme = useSelector((state) => state.mode.darkmode)
 
     return(
         <Box
-        height={window.innerHeight}
-        width={window.innerWidth}
-        style={{
-            backgroundColor:theme.mode === "light"
-            ? null
-            : "#000"
-        }}
+        height="100%"
+        width="100%"
         >
             <Container>
                 {
@@ -32,6 +28,9 @@ export default function ContainerComponent({Loading=false,Status=200,children}){
                             Status === 200
                             ?   <>
                                 <Header>
+                                    <TitleFunction
+                                    title={title}
+                                    />
                                     {children}
                                 </Header>
                                 </>

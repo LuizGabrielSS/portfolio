@@ -88,7 +88,7 @@ const about = {
         time:"2017 - 2019"
       },
       graduation:{
-        title:"SUPERIOR DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
+        title:"Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
         time:"2024 - 2025"
       }
     },
@@ -192,7 +192,93 @@ const contact = {
 }
 
 const project = {
-
+  backend:{
+    title:"Backend",
+    languages:[
+      {
+        title:"Python",
+        categorias:[
+          {
+            title:"Automações",
+            projects:[
+              {
+                title:"Auto-Relatorio-Email",
+                description:"Desenvolvi uma solução de automação robusta que permite aos usuários receberem relatórios detalhados sobre seus e-mails diretamente em seus dispositivos móveis via Telegram. Esta aplicação fullstack lê os e-mails do usuário e os classifica em duas categorias distintas: Spam e Não Spam. A integração com o Telegram permite que os usuários recebam notificações instantâneas, mantendo-os informados sobre sua caixa de entrada, mesmo em trânsito.",
+                github:"https://github.com/LuizGabrielSS/auto-email-relatorio",
+              }
+            ]
+          },
+          {
+            title:"API rest",
+            projects:[
+              {
+                title:"Como criar uma API rest",
+                description:"Este guia abrangente é um convite para explorar e dominar a criação de APIs REST utilizando Python e Flask. Se você é novo nesse mundo ou deseja aprimorar suas habilidades, este recurso é essencial para você. Vamos mergulhar fundo no conceito de repositório, fundamental para o desenvolvimento de aplicações web.",
+                github:"https://github.com/LuizGabrielSS/Como_criar_uma_APIREST",
+              },
+              {
+                title:"API rest segura",
+                description:"Este guia abrangente é um convite para explorar e dominar a criação de APIs REST seguras utilizando Python, além de aprender a implementar uma camada adicional de segurança para proteger suas aplicações web. Se você deseja entender profundamente como garantir a segurança de suas APIs e proteger os dados de seus usuários, este recurso é essencial para você.",
+                github:"https://github.com/LuizGabrielSS/API-SEGURA",
+              },
+              {
+                title:"API rest com pipeline",
+                description:"Este guia abrangente é uma jornada rumo ao domínio do desenvolvimento de APIs REST e à implementação de pipelines de integração contínua utilizando GitHub Actions. Seja você um iniciante ou um desenvolvedor experiente em busca de aprimoramento, este recurso é essencial para o seu arsenal de habilidades.",
+                github:"https://github.com/LuizGabrielSS/pipeline-init",
+              },
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  frontend:{
+    title:"Frontend",
+    languages:[
+      {
+        title:"React JS",
+        projects:[
+          {
+            title:"Pokedex",
+            description:"Desenvolvi um projeto utilizando a API da Pokédex em conjunto com ReactJS, combinando minha paixão pelo universo Pokémon com meu conhecimento em desenvolvimento front-end. Através dessa integração, pude explorar e aprender sobre manipulação de dados e renderização de componentes, resultando em uma aplicação interativa e envolvente para os entusiastas de Pokémon",
+            github:"https://github.com/LuizGabrielSS/pokedex",
+            site:"https://luizgabrielss.github.io/pokedex/"
+          },
+          {
+            title:"Movies",
+            description:"Concluí um projeto empregando uma API externa para acessar informações de filmes e realizar análises de dados, tudo isso utilizando ReactJS. Essa abordagem me permitiu aprofundar minha compreensão sobre integração de APIs e manipulação de dados, resultando em uma aplicação dinâmica e informativa para os amantes do cinema.",
+            github:"https://github.com/LuizGabrielSS/movies-web",
+            site:"https://luizgabrielss.github.io/movies-web/"
+          },
+          {
+            title:"Receitas",
+            description:"Meu projeto utiliza uma API externa para buscar uma variedade de receitas e sugestões criativas de pratos, tudo isso implementado com ReactJS. Essa integração permitiu-me explorar a busca e apresentação de dados dinâmicos, resultando em uma plataforma que inspira os amantes da culinária com novas ideias e possibilidades de receitas.",
+            github:"https://github.com/LuizGabrielSS/receitas-web",
+            site:"https://luizgabrielss.github.io/receitas-web/"
+          },
+        ],
+      },
+      {
+        title:"React native/Expo",
+        projects:[
+          {
+            title:"Expo-CEP",
+            description:"Desenvolvi um projeto com o propósito de explorar o uso de APIs externas, utilizando especificamente a API de CEP no ambiente React Native/Expo. Esta iniciativa permitiu-me aprofundar minha compreensão sobre integração de APIs em aplicativos móveis, proporcionando uma experiência prática e enriquecedora no desenvolvimento com tecnologias front-end para dispositivos móveis",
+            github:"https://github.com/LuizGabrielSS/Expo-CEP",
+            site:""
+          },
+          {
+            title:"Agitae",
+            description:"Elaborei um projeto mais elaborado inspirado na concepção de um aplicativo semelhante ao iFood, porém direcionado para o universo das festas e eventos. Este projeto envolveu a implementação de funcionalidades avançadas, desde a busca e seleção de fornecedores de alimentos e bebidas até a integração de sistemas de pagamento e agendamento de serviços. Utilizei tecnologias modernas, como React Native ou Flutter, para desenvolver uma interface intuitiva e responsiva, proporcionando uma experiência de usuário fluida e satisfatória durante o planejamento de eventos festivos.",
+            github:"https://github.com/LuizGabrielSS/Agitae2.0",
+            site:""
+          }
+        ]
+      }
+    ]
+  },
+  site:"Ver site",
+  github:"Ver repositorio"
 }
 
 export default {
