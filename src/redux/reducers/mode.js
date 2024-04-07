@@ -1,9 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+const Red_Dark = "#800000"
+
+const Red_Light = "#ff1a1a"
+
+const Blue_Dark = "#000080"
+
+const Blue_Light = "#1a1aff"
+
+const Blue = "#0000cc"
+
+const Red = "#cc0000"
+
+
 const LightMode = {
     mode: 'light',
     primary:{
-        main:"#330080"
+        main:Blue_Dark
     },
     text:{
         main:"#000000",
@@ -11,17 +24,17 @@ const LightMode = {
         translate:"#fff"
     },
     button:{
-        main:"#5c00e6",
+        main:Blue,
     },
     icon:{
-        main:"#5c00e6",
+        main:Blue_Light,
     }
 }
 
 const DarkMode = {
     mode: 'dark',
     primary:{
-        main:"#000080"
+        main:Red_Dark
     },
     text:{
         main:"#fff",
@@ -29,10 +42,10 @@ const DarkMode = {
         translate:"#fff"
     },
     button:{
-        main:"#1a1aff"
+        main:Red
     },
     icon:{
-        main:"#5c00e6",
+        main:Red_Light,
     }
     
 }

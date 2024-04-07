@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Avatar, Box, MenuItem, Select, Typography } from '@mui/material'
+import { Avatar, Box, FormControl, InputLabel, MenuItem, Select, Typography } from '@mui/material'
 import UsaVSG from "./usa.svg";
 import BraVSG from "./brasil.svg"
 
-function ItemComponent({Imagem,Nome}){
+function ItemComponent({Imagem,Nome,Value,valor}){
 
   return(
     <Box
@@ -22,7 +22,14 @@ function ItemComponent({Imagem,Nome}){
         />
       </Box>
       <Box>
-        <Typography variant="body1" color="text.translate">
+        <Typography 
+        variant="body1" 
+        color={
+          Value === valor
+          ? "text.translate"
+          :"text.main"
+        }
+        >
           {Nome}
         </Typography>
         
@@ -35,18 +42,30 @@ function ItemComponent({Imagem,Nome}){
 export default function SelectLanguage(){
 
     const { i18n } = useTranslation()
+
+    const[Value,SetValue] = useState(null)
   
     function handleChangeLanguage(language) {
       i18n.changeLanguage(language)
+      SetValue(language)
     }
   
     return(
       <Box
-      
+      width={window.innerWidth> 420 ? (window.innerWidth/8) : (window.innerWidth/3)}
       >
+        <FormControl fullWidth>
+          {
+            Value === null
+            ? <InputLabel
+              SX={{
+                text:"text.translate"
+              }}
+              >Linguagem/Language</InputLabel>
+            : null
+          }
         <Select
         autoWidth
-        defaultValue="pt-BR"
         onChange={(value) => handleChangeLanguage(value.target.value)}>
           <MenuItem
             value="en-US"
@@ -54,6 +73,8 @@ export default function SelectLanguage(){
             <ItemComponent
             Imagem={UsaVSG}
             Nome="English"
+            Value={Value}
+            valor="en-US"
             />
           </MenuItem>
           <MenuItem
@@ -62,9 +83,12 @@ export default function SelectLanguage(){
             <ItemComponent
             Imagem={BraVSG}
             Nome="Português"
+            Value={Value}
+            valor="pt-BR"
             />
           </MenuItem>
         </Select>
+        </FormControl>
       </Box>
     )
   

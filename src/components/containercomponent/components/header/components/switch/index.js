@@ -22,7 +22,7 @@ const MaterialUISwitch = styled(({ onChange, Mode, ...props }) => {
         },
         "& + .MuiSwitch-track": {
           opacity: 1,
-          backgroundColor: Mode ? "#ffe680" : "#003366",
+          backgroundColor: Mode ? "#ffe680" : "#c0c0c0",
         },
       },
     },
@@ -46,7 +46,7 @@ const MaterialUISwitch = styled(({ onChange, Mode, ...props }) => {
     },
     "& .MuiSwitch-track": {
       opacity: 1,
-      backgroundColor: Mode ? "#ffe680" : "#003366",
+      backgroundColor: Mode ? "#ffe680" : "#c0c0c0",
       borderRadius: 20 / 2,
     },
   }));
@@ -57,19 +57,16 @@ export default function SwitchMode(){
 
     const dispatch = useDispatch();
 
-    const setDark = () => {
-        if(theme.mode === "light"){
-            dispatch(ChangeMode(true));
-        }else{
-            dispatch(ChangeMode(false))
-        }
-    };
+    const toggleDarkMode = () => {
+      dispatch(ChangeMode(theme.mode === "light"));
+  };
 
     return(
         <Box
         >
             <MaterialUISwitch
-                onChange={() => setDark()}
+                onChange={(toggleDarkMode)}
+                checked={theme.mode === "dark"}
                 Mode={theme.mode === "light"}
                 />
         </Box>

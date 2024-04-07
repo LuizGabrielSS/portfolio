@@ -8,7 +8,6 @@ export default function HomeScreen(){
         <ContainerComponent
         title='pages.home'
         >
-            <p>oi</p>
         </ContainerComponent>
     )
 
