@@ -19,7 +19,7 @@ function TextComponent({variant,Icone,Texto,Color}){
             >
                 <Icone 
                 sx={{
-                    color:Color
+                    color:"icon.main"
                 }}
                 />
             </Box>

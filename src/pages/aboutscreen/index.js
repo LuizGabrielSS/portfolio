@@ -27,11 +27,15 @@ export default function AboutScreen(){
                 p={1}
                 >
                     <Card>
-                        <Typography paragraph>
-                            <Translator
-                                path="about.resume.resume"
-                            />
-                        </Typography>
+                        <Box
+                        m={2}
+                        >
+                            <Typography paragraph>
+                                <Translator
+                                    path="about.resume.resume"
+                                />
+                            </Typography>
+                        </Box>
                     </Card>
                 </Box>
             </ShowMoreFunction>
@@ -99,11 +103,15 @@ export default function AboutScreen(){
                             p={1}
                             >
                                 <Card>
-                                    <Typography>
-                                        <Translator
-                                            path="about.experience.personal.intership.descrption"
-                                        />
-                                    </Typography>
+                                    <Box
+                                    m={2}
+                                    >
+                                        <Typography>
+                                            <Translator
+                                                path="about.experience.personal.intership.descrption"
+                                            />
+                                        </Typography>
+                                    </Box>
                                 </Card>
                             </Box>
                         </ShowMoreFunction>

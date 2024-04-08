@@ -24,7 +24,7 @@ function IconeComponent({Titulo,Icone,url}){
                 >
                     <Icone
                     sx={{
-                        color:"button.main"
+                        color:"icon.main"
                     }}
                     />
                 </IconButton> 

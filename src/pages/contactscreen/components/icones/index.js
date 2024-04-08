@@ -18,7 +18,7 @@ function IconeComponent({Titulo,Icone,link}){
                 onClick={() => window.location.href = link}
                 size="large"
                 sx={{
-                    color:"button.main"
+                    color:"icon.main"
                 }}
                 >
                     <Icone
