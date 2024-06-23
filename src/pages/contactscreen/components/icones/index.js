@@ -15,7 +15,7 @@ function IconeComponent({Titulo,Icone,link}){
             placement="bottom"
             >
                 <IconButton 
-                onClick={() => window.location.href = link}
+                onClick={() => window.open(link, '_blank', 'noopener,noreferrer')}
                 size="large"
                 sx={{
                     color:"icon.main"
@@ -48,7 +48,7 @@ export default function IconeFunction(){
                 <IconeComponent
                 Titulo="Linkedin"
                 Icone={LinkedInIcon}
-                link="www.linkedin.com/in/luiz-gabriel-da-silva-samuel"
+                link="https://linkedin.com/in/luiz-gabriel-da-silva-samuel"
                 />
                 <IconeComponent
                 Titulo="Github"

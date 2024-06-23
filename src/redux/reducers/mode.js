@@ -9,7 +9,6 @@ const Colors = {
     "Blue":"#0000cc",
 }
 
-
 const LightMode = {
     mode: 'light',
     primary:{

@@ -40,8 +40,11 @@ function CardComponent({Nome,Tempo}){
         <Box
         m={2}
         >
-            <Card>
-                <CardContent>
+            <Card
+            >
+                <CardContent
+                
+                >
                     <TextComponent
                     Color="text.primary"
                     Icone={SchoolIcon}
@@ -67,7 +70,7 @@ export default function SchoolFunction(){
         <Box
         display="flex"
         alignItems="center"
-        justifyContent="center"
+        // justifyContent="center"
         flexWrap="wrap"
         >
             <CardComponent
