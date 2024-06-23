@@ -271,6 +271,7 @@ const project = {
                 title:"Auto-reporting-Email",
                 description:"I have developed a robust automation solution that allows users to receive detailed reports about their emails directly on their mobile devices via Telegram. This full-stack application reads user emails and categorizes them into two distinct categories: Spam and Not Spam. The integration with Telegram enables users to receive instant notifications, keeping them informed about their inbox even while on the go.",
                 github:"https://github.com/LuizGabrielSS/auto-email-relatorio",
+                image:"/projects/gmail.png"
               }
             ]
           },
@@ -281,16 +282,19 @@ const project = {
                 title:"How to create a REST API",
                 description:"This comprehensive guide is an invitation to explore and master the creation of REST APIs using Python and Flask. Whether you are new to this world or seeking to enhance your skills, this resource is essential for you. Let's delve deep into the concept of repository, which is fundamental for web application development.",
                 github:"https://github.com/LuizGabrielSS/Como_criar_uma_APIREST",
+                image:"/projects/api.png"
               },
               {
                 title:"Secure REST API",
                 description:"This comprehensive guide is an invitation to explore and master the creation of secure REST APIs using Python, as well as to learn how to implement an additional layer of security to protect your web applications. If you wish to deeply understand how to ensure the security of your APIs and safeguard your users' data, this resource is essential for you.",
                 github:"https://github.com/LuizGabrielSS/API-SEGURA",
+                image:"/projects/api.png"
               },
               {
                 title:"REST API rest with pipeline",
                 description:"This comprehensive guide is a journey towards mastering REST API development and implementing continuous integration pipelines using GitHub Actions. Whether you are a beginner or an experienced developer seeking enhancement, this resource is essential for your skillset arsenal.",
                 github:"https://github.com/LuizGabrielSS/pipeline-init",
+                image:"/projects/api.png"
               },
             ]
           }
@@ -314,13 +318,15 @@ const project = {
             title:"Movies",
             description:"I completed a project employing an external API to access movie information and perform data analysis, all using ReactJS. This approach allowed me to deepen my understanding of API integration and data manipulation, resulting in a dynamic and informative application for movie lovers.",
             github:"https://github.com/LuizGabrielSS/movies-web",
-            site:"https://luizgabrielss.github.io/movies-web/"
+            site:"https://luizgabrielss.github.io/movies-web/",
+            image:"/projects/movies.png"
           },
           {
             title:"Recipes",
             description:"My project utilizes an external API to fetch a variety of recipes and creative dish suggestions, all implemented with ReactJS. This integration allowed me to explore dynamic data searching and presentation, resulting in a platform that inspires culinary enthusiasts with new ideas and recipe possibilities.",
             github:"https://github.com/LuizGabrielSS/receitas-web",
-            site:"https://luizgabrielss.github.io/receitas-web/"
+            site:"https://luizgabrielss.github.io/receitas-web/",
+            image:"/projects/receitas.png"
           },
         ],
       },
@@ -331,13 +337,15 @@ const project = {
             title:"Expo-CEP",
             description:"I developed a project with the purpose of exploring the use of external APIs, specifically utilizing the ZIP code API in the React Native/Expo environment. This initiative allowed me to deepen my understanding of API integration in mobile applications, providing a practical and enriching experience in front-end development for mobile devices.",
             github:"https://github.com/LuizGabrielSS/Expo-CEP",
-            site:""
+            site:"",
+            image:"/projects/cep.png"
           },
           {
             title:"Agitae",
             description:"I have developed a more elaborate project inspired by the concept of an app similar to iFood, but focused on the universe of parties and events. This project involved the implementation of advanced functionalities, from searching and selecting food and beverage suppliers to integrating payment systems and scheduling services. I used modern technologies such as React Native or Flutter to develop an intuitive and responsive interface, providing a smooth and satisfying user experience during the planning of festive events.",
             github:"https://github.com/LuizGabrielSS/Agitae2.0",
-            site:""
+            site:"",
+            image:"/projects/agitae.png"
           }
         ]
       }

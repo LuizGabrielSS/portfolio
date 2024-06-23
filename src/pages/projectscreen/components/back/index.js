@@ -1,59 +1,71 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Box, Card, CardActions, CardContent, IconButton, Tooltip, Typography } from '@mui/material'
+import { Box, Card, CardActions, CardContent, IconButton, Tooltip, Typography,CardMedia } from '@mui/material'
 import { SimpleTreeView, TreeItem } from '@mui/x-tree-view'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Translator from '../../../../components/trasnlatecomponent'
 
-function ProjetosCompoent({title,description,github}){
+function ProjetosCompoent({title,description,github,image}){
 
     return(
         <Box
         m={1}
         >
-            <Card>
-                <CardContent>
-                    <Box
-                    m={2}
-                    >
-                        <Typography variant="h5">
-                            {title}
-                        </Typography>
-                    </Box>
-                    <Box
-                    m={2}
-                    >
-                        <Typography variant="body1">
-                            {description}
-                        </Typography>
-                    </Box>
-                </CardContent>
-                <CardActions>
+            <Card sx={{ display: 'flex' }}>
+            <Box display="flex"
+                alignItems="center"
+                justifyContent="center"
+                >
+                <CardMedia
+                    component="img"
+                    sx={{ width: 151 }}
+                    src={`${process.env.PUBLIC_URL}${image}`}
+                />
                     <Box>
-                        <Tooltip 
-                        title={<Translator
-                            path="project.github"
-                        />}
-                        placement="bottom">
-                            <IconButton
-                            color="button" 
-                            onClick={() => window.location.href = github}
-                            size="large"
-                            sx={{
-                                color:"icon.main"
-                            }}
+                        <CardContent>
+                            <Box
+                            m={2}
                             >
-                                <GitHubIcon
-                                style={{
-                                    color:"icon.main"
-                                }}
-                                />
-                            </IconButton> 
-                        </Tooltip>
+                                <Typography variant="h5">
+                                    {title}
+                                </Typography>
+                            </Box>
+                            <Box
+                            m={2}
+                            >
+                                <Typography variant="body1">
+                                    {description}
+                                </Typography>
+                            </Box>
+                        </CardContent>
+                        <CardActions>
+                            <Box>
+                                <Tooltip 
+                                title={<Translator
+                                    path="project.github"
+                                />}
+                                placement="bottom">
+                                    <IconButton
+                                    color="button" 
+                                    onClick={() => window.location.href = github}
+                                    size="large"
+                                    sx={{
+                                        color:"icon.main"
+                                    }}
+                                    >
+                                        <GitHubIcon
+                                        style={{
+                                            color:"icon.main"
+                                        }}
+                                        />
+                                    </IconButton> 
+                                </Tooltip>
+                            </Box>
+                        </CardActions>
+                        </Box>
                     </Box>
-                </CardActions>
             </Card>
         </Box>
     )
@@ -81,6 +93,7 @@ function CategoriasComponent({Titulo,Projetos}){
                                         title={item.title}
                                         description={item.description}
                                         github={item.github}
+                                        image={item.image}
                                         />
                                     </>
                                 ))

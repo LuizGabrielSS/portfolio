@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Box, Card, CardActions, CardContent, IconButton, Tooltip, Typography } from '@mui/material'
+import { Box, Card, CardActions, CardContent, IconButton, Tooltip, Typography,CardMedia } from '@mui/material'
 import { SimpleTreeView, TreeItem } from '@mui/x-tree-view'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -34,14 +34,24 @@ function IconeComponent({Titulo,Icone,url}){
 
 }
 
-function ProjectsComponent({title,description,github,site}){
+function ProjectsComponent({title,description,github,site,image}){
 
     return(
         <Box
         m={1}
         >
             <Card>
-                <CardContent>
+                <Box display="flex"
+                alignItems="center"
+                justifyContent="center"
+                >
+                    <CardMedia
+                    component="img"
+                    sx={{ width: 151 }}
+                    src={`${process.env.PUBLIC_URL}${image}`}
+                />
+                    <Box>
+                        <CardContent>
                     <Box
                     m={2}
                     >
@@ -77,6 +87,9 @@ function ProjectsComponent({title,description,github,site}){
                         : null
                     }
                 </CardActions>
+                    </Box>
+                </Box>
+                
             </Card>
         </Box>
     )
@@ -100,6 +113,7 @@ function LanguagesCompoent({Titulo,projects}){
                                         description={item.description}
                                         github={item.github}
                                         site={item.site}
+                                        image={item.image}
                                         />
                                     </>
                                 ))
