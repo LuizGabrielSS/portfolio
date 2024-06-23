@@ -8,17 +8,61 @@ const about = {
     hardskill:{
       title:"Hard Skills",
       abilities:[
-        "Desenvovimento de APIs rest",
-        "Desenvolvimento de automações",
-        "Desenvolvimento mobile",
-        "Desenvolvimento web",
-        "Desenvolvimento de Pipeline(CI/CD)",
-        "Conhecimento em GCP",
-        "Manipulação e uso de APIs",
-        "Portugues(Nativo)",
-        "Inglês(Fluente)",
-        "Espanhol(Intermediario)",
-        "Mandarim(basico)"
+        {
+          "name":"Desenvovimento de APIs rest",
+          "progress":85,
+          "type":"prog"
+        },
+        {
+          "name":"Desenvolvimento de automações",
+          "progress":65,
+          "type":"prog"
+        },
+        {
+          "name":"Desenvolvimento mobile",
+          "progress":75,
+          "type":"prog"
+        },
+        {
+          "name":"Desenvolvimento web",
+          "progress":75,
+          "type":"prog"
+        },
+        {
+          "name":"Desenvolvimento de Pipeline(CI/CD)",
+          "progress":60,
+          "type":"prog"
+        },
+        {
+          "name":"Conhecimento em GCP",
+          "progress":60,
+          "type":"prog"
+        },
+        {
+          "name":"Manipulação e uso de APIs",
+          "progress":85,
+          "type":"prog"
+        },
+        {
+          "name":"Portugues(Nativo)",
+          "progress":100,
+          "type":"language"
+        },
+        {
+          "name":"Inglês(Fluente)",
+          "progress":100,
+          "type":"language"
+        },
+        {
+          "name":"Espanhol(Intermediario)",
+          "progress":55,
+          "type":"language"
+        },
+        {
+          "name":"Mandarim(basico)",
+          "progress":35,
+          "type":"language"
+        },
       ]
     },
     softskill:{
@@ -54,7 +98,7 @@ const about = {
         },
         {
           title:"Analista Junior - Segurança da informação",
-          time:"Maio de 2022 - Atualmente",
+          time:"Maio de 2022 - Junho de 2024",
           description:
           {
             title:"Descrição",
@@ -65,6 +109,24 @@ const about = {
               "Desenvolvimento de Pipeline(CI/CD)",
               "Gestão e manutenção de CFTV",
               "Gestão e manutenção de controle de acesso"
+            ]
+          },
+          team:"Segurança Física",
+          company:"Stone Co."
+        },
+        {
+          title:"Desenvolvedor Junior - CIA(Centro de Inteligencia e Automações)",
+          time:"Junho de 2024 - Atualmente",
+          description:
+          {
+            title:"Descrição",
+            ativities:[
+              "Desenvolvimento de APIs rest",
+              "Desenvolvimento web",
+              "Desenvolvimento mobile",
+              "Desenvolvimento de Pipeline(CI/CD)",
+              "Desenvolvimento de Documentações",
+              "Desenvolvimento de RPAs"
             ]
           },
           team:"Segurança Física",
@@ -106,6 +168,10 @@ const about = {
             {
               title:"Começando com Flask: framework web de Python",
               url:"https://cursos.alura.com.br/degree/certificate/d4ca8fe7-e50e-45df-8450-607d5623771f"
+            },
+            {
+              title:"Python para data science",
+              url:"https://cursos.alura.com.br/degree/certificate/74a1f6d5-ba6d-4359-8230-d2b157177fcd?lang"
             },
           ]
         },

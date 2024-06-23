@@ -8,7 +8,8 @@ export default function ShowMoreFunction({children,Nome}){
         <Box
         m={2}
         >
-            <SimpleTreeView>
+            <SimpleTreeView
+            >
                 <TreeItem itemId={Nome} label={Nome}>
                     {children}
                 </TreeItem>

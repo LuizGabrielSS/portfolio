@@ -8,17 +8,61 @@ const about = {
     hardskill:{
       title:"Hard Skills",
       abilities:[
-        "Development of REST APIs",
-        "Automation development",
-        "Mobile development",
-        "Web development",
-        "Pipeline development (CI/CD)",
-        "GCP knowledge",
-        "API manipulation and usage",
-        "Portuguese (Native)",
-        "English (Fluent)",
-        "Spanish (Intermediate)",
-        "Mandarin (Basic)"
+        {
+          "name":"Development of REST APIs",
+          "progress":85,
+          "type":"prog"
+        },
+        {
+          "name":"Automation development",
+          "progress":65,
+          "type":"prog"
+        },
+        {
+          "name":"Mobile development",
+          "progress":75,
+          "type":"prog"
+        },
+        {
+          "name":"Web development",
+          "progress":75,
+          "type":"prog"
+        },
+        {
+          "name":"Pipeline development (CI/CD)",
+          "progress":60,
+          "type":"prog"
+        },
+        {
+          "name":"GCP knowledge",
+          "progress":60,
+          "type":"prog"
+        },
+        {
+          "name":"API manipulation and usage",
+          "progress":85,
+          "type":"prog"
+        },
+        {
+          "name":"Portuguese(Native)",
+          "progress":100,
+          "type":"language"
+        },
+        {
+          "name":"English(Fluent)",
+          "progress":100,
+          "type":"language"
+        },
+        {
+          "name":"Spanish(Intermediate)",
+          "progress":55,
+          "type":"language"
+        },
+        {
+          "name":"Mandarin(Basic)",
+          "progress":35,
+          "type":"language"
+        },
       ]
     },
     softskill:{
@@ -54,7 +98,7 @@ const about = {
         },
         {
           title:"Analista Junior - Segurança da informação",
-          time:"May 2022 - Present",
+          time:"May 2022 - June 2024",
           description:
           {
             title:"Description",
@@ -65,6 +109,24 @@ const about = {
               "Pipeline development (CI/CD)",
               "CCTV management and maintenance",
               "Access control management and maintenance"
+            ]
+          },
+          team:"Physical Security",
+          company:"Stone Co."
+        },
+        {
+          title:"Developer Junior - Segurança da informação",
+          time:"June 2024 - Present",
+          description:
+          {
+            title:"Description",
+            ativities:[
+              "Development of REST APIs",
+              "Web development",
+              "Mobile development",
+              "Pipeline development (CI/CD)",
+              "Development of Documentations",
+              "Development of RPAs"
             ]
           },
           team:"Physical Security",
@@ -106,6 +168,10 @@ const about = {
             {
               title:"Começando com Flask: framework web de Python",
               url:"https://cursos.alura.com.br/degree/certificate/d4ca8fe7-e50e-45df-8450-607d5623771f"
+            },
+            {
+              title:"Python para data science",
+              url:"https://cursos.alura.com.br/degree/certificate/74a1f6d5-ba6d-4359-8230-d2b157177fcd?lang"
             },
           ]
         },

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Button, Card, CardActions, CardContent, Divider, Typography } from '@mui/material'
+import { Box, Button, Card, CardActions, CardContent, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import WorkIcon from '@mui/icons-material/Work';
@@ -84,13 +84,11 @@ function ExperienciaComponent({titulo,time,tempo,empresa,descricao}){
                     m={2}>
                         {
                             descricao.ativities.map((item) => (
-                                <Box m={2}>
+                                <Box m={2} p={2}>
+
                                     <Typography variant="body1" >
-                                        - {item}
+                                        {item}
                                     </Typography>
-                                    <Divider
-                                    color="text"
-                                    />
                                 </Box>
                             ))
                         }
