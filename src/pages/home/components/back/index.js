@@ -65,7 +65,7 @@ function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
                     color: colorText,
                     position: 'relative', // Ensure the text is above the icons
                     zIndex: 1, // Ensure the text is above the icons
-                    fontSize: 'calc(10vw + 4vh)', // Adjust font size to fill maximum space
+                    fontSize: 'calc(10vw + 3vh)', // Adjust font size to fill maximum space
                     whiteSpace: 'nowrap', // Prevent text from wrapping
                 }}
             >
@@ -82,8 +82,8 @@ export default function BackgroundComponent(){
         <Box 
             display="flex"
             sx={{
-                height:(window.innerHeight*3/4),
-                width:window.innerWidth
+                height:window.innerHeight,
+                width:(window.innerWidth*98.9/100)
             }}
             >
             <BoxComponent

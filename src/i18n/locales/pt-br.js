@@ -1,5 +1,33 @@
 const home = {
-    "title":"Desenvolvedor FullStack"
+    "about":{
+        "title":"Sobre mim",
+        "me":{
+            "author":"L. Gabriel",
+            "text":"Acredito que tudo que sou depende muito do meu entorno e que maneira melhor do que me conhecer então do que pelos olhos daqueles ao meu redor"
+        },
+        "them":[
+            {
+                "author":"Gabriele, Turismologa",
+                "text":"É uma honra acompanhar os desdobramentos e a creditar na evolução dele como individuo, amigo e profissional",
+                "icon":"turismologa"
+            },
+            {
+                "author":"Matheus, Jornalista",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"jornalista"
+            },
+            {
+                "author":"Ezequiel, Cienstista de contabilidade",
+                "text":"Tem um otimo foco em seus projetos e tarefas, alem de ser determinado e persistente",
+                "icon":"contador"
+            },
+            {
+                "author":"Louise, Filosofa",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"filosofia"
+            },
+        ]
+    }
     }
 
 const Translation = {

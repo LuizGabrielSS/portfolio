@@ -25,8 +25,6 @@ export default function ContainerComponent({seeHeader=true,children}){
 
     return(
         <Box
-        height={altura}
-        width={largura}
         >
             {/* <Container
             maxWidth="xl"
