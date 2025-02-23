@@ -28,7 +28,7 @@ const home = {
             {
                 "author": "Louise, Philosopher",
                 "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "filosofa"
+                "icon": "filosofia"
             },
         ]
     }

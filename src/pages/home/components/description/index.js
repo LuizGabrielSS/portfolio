@@ -22,15 +22,15 @@ function BoxThemComponent({Author, Text, Icon, Index}){
             justifyContent='center'
             borderRadius='20px'
             sx={{
-                width: '50%',
-                height: '50%',
+                width: window.innerWidth > 420 ? '50%' : window.innerWidth/4,
+                    height: window.innerWidth > 420 ? '50%' : window.innerHeight/4,
                 backgroundColor: Index % 2 === 0? "background.home_a" : "background.home_b"
             }}
             >
                 <Icon
                 sx={{
-                    width: '50%',
-                    height: '50%',
+                    width: window.innerWidth > 420 ? '50%' : window.innerWidth/4,
+                    height: window.innerWidth > 420 ? '50%' : window.innerHeight/4,
                     color: Index % 2 === 0? "icon.home_b" : "icon.home_a"
                 }}
                 />
@@ -45,7 +45,7 @@ function BoxThemComponent({Author, Text, Icon, Index}){
                     m={2}
                     >
                         <Typography
-                        variant="h4"
+                        variant={window.innerWidth > 420 ? "h4" : 'h6'}
                         component="div"
                         sx={{
                             color: Index % 2 === 0 ? "text.home_a" : "text.home_b"
@@ -58,7 +58,7 @@ function BoxThemComponent({Author, Text, Icon, Index}){
                     m={2}
                     >
                         <Typography
-                        variant="h5"
+                        variant={window.innerWidth > 420 ? "h5" : 'subtitle1'}
                         component="div"
                         sx={{
                             color: Index % 2 === 0 ? "text.home_a" : "text.home_b"
@@ -85,7 +85,7 @@ function BoxMeComponent({Author, Text}){
             >
                 <Typography
                 align='center'
-                variant="h3"
+                variant={window.innerWidth > 420 ? "h3" : 'h5'}
                 component="div"
                 sx={{
                     color: "text.home_b"
@@ -99,7 +99,7 @@ function BoxMeComponent({Author, Text}){
             >
                 <Typography
                 align='center'
-                variant="h4"
+                variant={window.innerWidth > 420 ? "h4" : 'h6'}
                 component="div"
                 sx={{
                     color: "text.home_b"
@@ -139,7 +139,7 @@ export default function DescriptionComponent(){
             >
                 <Typography
                 align='center'
-                variant="h2"
+                variant={window.innerWidth > 420 ? "h2" : 'h4'}
                 component="div"
                 sx={{
                     color: "text.home_a"

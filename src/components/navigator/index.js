@@ -33,7 +33,12 @@ export default function Navigator(){
     const navegacao = useNavigate()
 
     return(
-        <Box>
+        <Box
+        display="flex"
+        alignContent="center"
+        justifyContent="center"
+        mt={3}
+        >
             <BoxComponent
             name='contact'
             navegacao={navegacao}

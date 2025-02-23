@@ -45,6 +45,8 @@ function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
         />
     ));
 
+    const fontSize = window.innerWidth > 420 ? 'calc(10vw + 3vh)' : 'calc(10vw + 1vh)'
+
     return (
         <Box
             width={"50%"}
@@ -65,7 +67,7 @@ function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
                     color: colorText,
                     position: 'relative', // Ensure the text is above the icons
                     zIndex: 1, // Ensure the text is above the icons
-                    fontSize: 'calc(10vw + 3vh)', // Adjust font size to fill maximum space
+                    fontSize: fontSize, // Adjust font size to fill maximum space
                     whiteSpace: 'nowrap', // Prevent text from wrapping
                 }}
             >

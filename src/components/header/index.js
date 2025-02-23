@@ -5,6 +5,7 @@ import MuiAppBar from '@mui/material/AppBar';
 import { useNavigate } from 'react-router-dom';
 
 import Navigator from '../navigator'
+import {SwitchTranslate} from '../translate'
 
 export default function Header({children}){
 
@@ -57,7 +58,7 @@ export default function Header({children}){
                                     color: "text.top_principal"
                                 }}
                                 >
-                                Luiz/Gabriel/Samuel
+                                    {window.innerWidth > 420 ? 'Luiz/Gabriel/Samuel' : 'L/G/S'}
                             </Typography>
                         </Box>
                     </Box>
@@ -65,8 +66,12 @@ export default function Header({children}){
                     sx={{
                         marginLeft: 'auto'
                     }}
+                    display="flex"
+                    alignContent="center"
+                    justifyContent="center"
                     >
                         <Navigator/>
+                        <SwitchTranslate/>
                     </Box>
                 </Toolbar>
             </AppBar>
