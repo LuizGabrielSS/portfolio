@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Container } from '@mui/material';
 
 import Header from '../header';
+import Footer from '../footer';
 
 export default function ContainerComponent({seeHeader=true,children}){
 
@@ -41,6 +42,7 @@ export default function ContainerComponent({seeHeader=true,children}){
                     
                 }
             {/* </Container> */}
+            <Footer/>
         </Box>
     )   
 
