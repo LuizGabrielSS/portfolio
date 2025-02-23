@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 //Routes
 import NotFoundScreen from '../pages/notfound'
 import HomeScreen from '../pages/home'
+import ContactScreen from '../pages/contact'
 
 export default function RoutesFunction(){
 
@@ -23,6 +24,12 @@ export default function RoutesFunction(){
                     path="/"
                     element={
                         <HomeScreen/>
+                    }
+                />
+                <Route
+                    path="/contact"
+                    element={
+                        <ContactScreen/>
                     }
                 />
             </Routes>

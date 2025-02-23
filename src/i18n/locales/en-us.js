@@ -1,3 +1,7 @@
+const routes = {
+    "contact":"Contact"
+}
+
 const home = {
     "about": {
         "title": "About Me",
@@ -30,9 +34,27 @@ const home = {
     }
 }
 
+const contact = {
+    "submit": {
+        "status_ok": "Email sent successfully",
+        "status_not_ok": "Error trying to send the message, please try again later"
+    },
+    "form": {
+        "status": {
+            "erro": "The field was not filled in correctly"
+        },
+        "name": {
+            "placeholder": "Fill in the field with your full name",
+            "title": "Full name"
+        }
+    }
+}
+
 const Translation = {
     translations: {
-        "home":home
+        "home":home,
+        "contact":contact,
+        "routes":routes
     }
 }
 

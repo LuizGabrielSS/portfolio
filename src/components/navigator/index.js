@@ -1,17 +1,44 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
-export default function Navigator(){
+function BoxComponent({name, to, navegacao}){
+
+    const { t } = useTranslation()
 
     return(
-        <Box>
+        <Box
+        mx={2}
+        onClick={() => navegacao(to)}
+        sx={{
+            cursor: 'pointer'
+        }}
+        >
             <Typography
                 sx={{
                     color: "text.top"
                 }}
             >
-                Teste
+                {t(`routes.${name}`)}
+                
             </Typography>
+        </Box>
+    )
+
+}
+
+export default function Navigator(){
+
+    const navegacao = useNavigate()
+
+    return(
+        <Box>
+            <BoxComponent
+            name='contact'
+            navegacao={navegacao}
+            to='/contact'
+            />
         </Box>
     )
 
