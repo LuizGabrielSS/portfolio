@@ -15,6 +15,10 @@ const Pallet =  {
     icon:{
         home_a: "#BF2A37",
         home_b: "#1C588C"
+    },
+    button:{
+        home_a: "#BF2A37",
+        home_b: "#1C588C"
     }
 }
 

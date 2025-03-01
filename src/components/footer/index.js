@@ -24,13 +24,13 @@ function SocialComponent({Icon, Link}){
 
 }
 
-export default function footerComponent(){
+export default function footerComponent({fixed=false}){
 
     const Footer = styled('footer')(({ theme }) => ({
-        position: 'relative',
+        position: fixed === true ? 'fixed' : 'relative',
         bottom: 0,
         width: '100%',
-        backgroundColor: "background.top",
+        backgroundColor: theme.palette.background.top,
         padding: theme.spacing(2),
         textAlign: 'center',
         borderTop: '2px solid ',

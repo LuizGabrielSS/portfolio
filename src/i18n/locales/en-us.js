@@ -37,15 +37,24 @@ const home = {
 const contact = {
     "submit": {
         "status_ok": "Email sent successfully",
-        "status_not_ok": "Error trying to send the message, please try again later"
+        "status_not_ok": "Error trying to send the message, please try again later",
+        "button":"Send email"
     },
     "form": {
         "status": {
             "erro": "The field was not filled in correctly"
         },
-        "name": {
-            "placeholder": "Fill in the field with your full name",
-            "title": "Full name"
+        "email":{
+            "placeholder":"email@email.com",
+            "title":"Email"
+        },
+        "name":{
+            "placeholder":"Full name",
+            "title":"Full name"
+        },
+        "message":{
+            "placeholder":"Message that you want to send",
+            "title":"Message"
         }
     }
 }

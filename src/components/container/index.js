@@ -1,28 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Container } from '@mui/material';
+import React from 'react';
+import { Box } from '@mui/material';
 
 import Header from '../header';
 import Footer from '../footer';
 
-export default function ContainerComponent({seeHeader=true,children}){
-
-    const [altura, setAltura] = useState(window.innerHeight);
-    
-    const [largura, setLargura] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-          setAltura(window.innerHeight);
-          setLargura(window.innerWidth);
-        };
-    
-        window.addEventListener('resize', handleResize);
-    
-        // Limpeza do listener quando o componente for desmontado
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
+export default function ContainerComponent({seeHeader=true,fixFooter=false,children}){
 
     return(
         <Box
@@ -42,7 +24,9 @@ export default function ContainerComponent({seeHeader=true,children}){
                     
                 }
             {/* </Container> */}
-            <Footer/>
+            <Footer
+            fixed={fixFooter}
+            />
         </Box>
     )   
 

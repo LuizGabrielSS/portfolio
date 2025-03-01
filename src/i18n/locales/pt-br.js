@@ -37,15 +37,24 @@ const home = {
 const contact = {
     "submit":{
         "status_ok":"Email enviado com sucesso",
-        "status_not_ok":"Erro ao tentar enviar a mensagem, por favor tente novamente mais tarde"
+        "status_not_ok":"Erro ao tentar enviar a mensagem, por favor tente novamente mais tarde",
+        "button":"Enviar email"
     },
     "form":{
         "status":{
             "erro":"O campo não foi preenchido devidamente"
         },
+        "email":{
+            "placeholder":"email@email.com",
+            "title":"Email"
+        },
         "name":{
-            "placeholder":"Preencha o campo com o seu nome completo",
+            "placeholder":"Nome completo",
             "title":"Nome completo"
+        },
+        "message":{
+            "placeholder":"Mensagem que deseja enviar",
+            "title":"Mensagem"
         }
     }
 }

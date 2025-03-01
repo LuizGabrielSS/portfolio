@@ -2,6 +2,9 @@ import React, {useState,useEffect} from 'react';
 import { Box, TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 import emailjs from '@emailjs/browser';
+import SendIcon from '@mui/icons-material/Send';
+import ButtonComponent from '../../../../components/button';
+
 
 function ValidandoInfo(Informacao){
 
@@ -27,11 +30,15 @@ function InputComponent({SetInformacao,Informacao,Titulo,PlaceHolder,multiline=f
     return(
         <Box
         m={2}
+        sx={{
+            backgroundColor: '#fff'
+        }}
         >
             <TextField
             fullWidth
             label={Titulo}
             variant="outlined"
+            rows={4}
             placeholder={PlaceHolder}
             defaultValue={Informacao}
             multiline={multiline}
@@ -69,7 +76,7 @@ export default function FormComponent({SetMensagem, SetStatus, SetOpen}){
             mensagem:MessageSender
         }).then((res) => {
             SetMensagem(t("contact.submit.status_ok"))
-            SetStatus(true)
+            SetStatus(false)
             SetOpen(true)
         }).catch((err) => {
             SetMensagem(t("contact.submit.status_not_ok"))
@@ -96,23 +103,43 @@ export default function FormComponent({SetMensagem, SetStatus, SetOpen}){
 
     return(
         <Box
-        m={2}
+        m={5}
+        p={2}
+        width={window.innerWidth > 420 ? (window.innerWidth/3) : '100%'}
         sx={{
-            marginLeft: 'auto'
+            borderRadius: '10px',
+            backgroundColor: 'rgba(255, 255, 255, 0.9)', // Set background to be slightly transparent
+            backdropFilter: 'blur(10px)', // Apply blur effect
         }}
-        alignItems="center"
-        justifyContent="center"
-        display="flex"
         >
-            <Box>
-                <InputComponent
-                Informacao={NameSender}
-                PlaceHolder={(t("contact.form.name.placeholder"))}
-                SetInformacao={SetNameSender}
-                Titulo={(t("contact.form.name.title"))}
-                t={t}
-                />
-            </Box>
+            <InputComponent
+            Informacao={EmailSender}
+            PlaceHolder={(t("contact.form.email.placeholder"))}
+            SetInformacao={SetEmailSender}
+            Titulo={(t("contact.form.email.title"))}
+            t={t}
+            />
+            <InputComponent
+            Informacao={NameSender}
+            PlaceHolder={(t("contact.form.name.placeholder"))}
+            SetInformacao={SetNameSender}
+            Titulo={(t("contact.form.name.title"))}
+            t={t}
+            />
+            <InputComponent
+            Informacao={MessageSender}
+            PlaceHolder={(t("contact.form.message.placeholder"))}
+            SetInformacao={SetMessageSender}
+            Titulo={(t("contact.form.message.title"))}
+            multiline={true}
+            t={t}
+            />
+            <ButtonComponent
+            Action={() => SendEmail()}
+            Text={(t("contact.submit.button"))}
+            Disabled={HabilitarSender}
+            Icon={SendIcon}
+            />
         </Box>
     )
 
