@@ -1,3 +1,6 @@
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+
+
 const routes = {
     "contact":"Contato"
 }
@@ -21,15 +24,50 @@ const home = {
                 "icon":"jornalista"
             },
             {
-                "author":"Ezequiel, Cienstista de contabilidade",
+                "author":"Adriana, ACS",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"ACS"
+            },
+            {
+                "author":"Davi, TR",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Radiologista"
+            },
+            {
+                "author":"Ezequiel, Atuário",
                 "text":"Tem um otimo foco em seus projetos e tarefas, alem de ser determinado e persistente",
-                "icon":"contador"
+                "icon":"atuario"
             },
             {
                 "author":"Louise, Filosofa",
                 "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"filosofia"
+                "icon":"filosofa"
             },
+            {
+                "author":"Roberto, Desenvolvedor",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Dev"
+            },
+            {
+                "author":"Gustavo, Desenvolvedor",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Dev"
+            },
+            {
+                "author":"Alisson, Desenvolvedor",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Dev"
+            },
+            {
+                "author":"Alessandro, Tech Lead",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Tech Lead"
+            },
+            {
+                "author":"Pedro, Tech Lead",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Tech Lead"
+            }
         ]
     }
     }

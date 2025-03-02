@@ -5,6 +5,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import HealingIcon from '@mui/icons-material/Healing';
+import CodeIcon from '@mui/icons-material/Code';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 
 function BoxThemComponent({Author, Text, Icon, Index}){
 
@@ -123,8 +127,12 @@ export default function DescriptionComponent(){
     const themIcon = {
         "turismologa":LanguageIcon,
         "jornalista":NewspaperIcon,
-        "contador":AccountBalanceIcon,
-        "filosofia":AutoStoriesIcon,
+        "atuario":AccountBalanceIcon,
+        "filosofa":AutoStoriesIcon,
+        "ACS":HealingIcon,
+        "Radiologista":HealthAndSafetyIcon,
+        "Dev":CodeIcon,
+        "Tech Lead":SupervisorAccountIcon
     }
 
     return(

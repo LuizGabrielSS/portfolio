@@ -12,7 +12,7 @@ const home = {
         "them": [
             {
                 "author": "Gabriele, Tourismologist",
-                "text": "It is an honor to witness his developments and believe in his evolution as an individual, friend, and professional",
+                "text": "It is an honor to follow his developments and believe in his evolution as an individual, friend, and professional",
                 "icon": "turismologa"
             },
             {
@@ -21,15 +21,50 @@ const home = {
                 "icon": "jornalista"
             },
             {
-                "author": "Ezequiel, Accountant Scientist",
+                "author": "Adriana, ACS",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "ACS"
+            },
+            {
+                "author": "Davi, TR",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Radiologista"
+            },
+            {
+                "author": "Ezequiel, Actuary",
                 "text": "He has great focus on his projects and tasks, as well as being determined and persistent",
-                "icon": "contador"
+                "icon": "atuario"
             },
             {
                 "author": "Louise, Philosopher",
                 "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "filosofia"
+                "icon": "filosofa"
             },
+            {
+                "author": "Roberto, Developer",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Dev"
+            },
+            {
+                "author": "Gustavo, Developer",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Dev"
+            },
+            {
+                "author": "Alisson, Developer",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Dev"
+            },
+            {
+                "author": "Alessandro, Tech Lead",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Tech Lead"
+            },
+            {
+                "author": "Pedro, Tech Lead",
+                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon": "Tech Lead"
+            }
         ]
     }
 }
