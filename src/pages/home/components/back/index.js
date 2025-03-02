@@ -1,49 +1,9 @@
 import React from 'react';
 import { Box,Typography } from '@mui/material';
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import ComputerIcon from '@mui/icons-material/Computer';
+import LottieComponent from '../../../../components/lottie';
 
-function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
-    const iconPositions = [
-        { top: '10%', left: '20%' },
-        { top: '30%', left: '40%' },
-        { top: '50%', left: '60%' },
-        { top: '70%', left: '80%' },
-        { top: '20%', left: '10%' },
-        { top: '40%', left: '30%' },
-        { top: '60%', left: '50%' },
-        { top: '80%', left: '70%' },
-        { top: '15%', left: '25%' },
-        { top: '35%', left: '45%' },
-        { top: '55%', left: '65%' },
-        { top: '75%', left: '85%' },
-        { top: '25%', left: '15%' },
-        { top: '45%', left: '35%' },
-        { top: '65%', left: '55%' },
-        { top: '85%', left: '75%' },
-        { top: '5%', left: '50%' },
-        { top: '95%', left: '50%' },
-        { top: '50%', left: '5%' },
-        { top: '50%', left: '95%' },
-    ];
 
-    const icons = iconPositions.map((position, index) => (
-        <Icone
-            key={index}
-            sx={{
-                position: 'absolute',
-                top: position.top,
-                left: position.left,
-                opacity: 0.2, // Reduced opacity for fade effect
-                fontSize: '2rem',
-                color: colorIcon,
-                transition: 'opacity 0.3s ease-in-out', // Smooth transition for fade effect
-                '&:hover': {
-                    opacity: 0.5, // Increase opacity on hover
-                },
-            }}
-        />
-    ));
+function BoxComponent({ colorBack, colorText, text, lottie="" }) {
 
     const fontSize = window.innerWidth > 420 ? 'calc(10vw + 3vh)' : 'calc(10vw + 1vh)'
 
@@ -59,7 +19,21 @@ function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
                 overflow: 'hidden', // Hide icons that go outside the box
             }}
         >
-            {icons}
+            <Box
+                sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    zIndex: 0, // Ensure the Lottie animation is at the bottom
+                    background: 'rgba(0, 0, 0, 0.7)', // Add a dark background to the Lottie animation
+                }}
+            >
+                <LottieComponent
+                    gif={lottie}
+                />
+            </Box>
             <Typography
                 variant="h1"
                 component="div"
@@ -70,7 +44,7 @@ function BoxComponent({ colorBack, colorText, text, Icone, colorIcon }) {
                     fontSize: fontSize, // Adjust font size to fill maximum space
                     whiteSpace: 'nowrap', // Prevent text from wrapping
                 }}
-            >
+                >
                 {text}
             </Typography>
         </Box>
@@ -91,16 +65,14 @@ export default function BackgroundComponent(){
             <BoxComponent
             colorBack="background.home_a"
             colorText="text.home_a"
-            colorIcon="icon.home_a"
             text="LUIZ"
-            Icone={ComputerIcon}
+            lottie="https://lottie.host/c8687693-04da-4e6d-b316-1e255e6318a0/DGegkTCbZF.lottie"
             />
             <BoxComponent
             colorBack="background.home_b"
             colorText="text.home_b"
-            colorIcon="icon.home_b"
             text="GABRIEL"
-            Icone={MusicNoteIcon}
+            lottie="https://lottie.host/2f0234b9-08dd-4877-99f5-9562e4e539e9/CxjUV1EjfP.lottie"
             />
         </Box>
     )

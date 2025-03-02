@@ -58,7 +58,7 @@ export default function Header({children}){
                                     color: "text.top_principal"
                                 }}
                                 >
-                                    {window.innerWidth > 420 ? 'Home' : 'Home'}
+                                    {window.innerWidth > 420 ? 'Luiz/Gabriel/Samuel' : 'L/G/S'}
                             </Typography>
                         </Box>
                     </Box>
