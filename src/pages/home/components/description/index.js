@@ -14,9 +14,13 @@ function BoxThemComponent({Author, Text, Icon, Index}){
 
     return(
         <Box
+        m={2}
+        p={2}
         display="flex"
         sx={{
-            flexDirection: Index % 2 === 0 ? 'row' : 'row-reverse'
+            flexDirection: Index % 2 === 0 ? 'row' : 'row-reverse',
+            backgroundColor: Index % 2 === 0? "background.home_a" : "background.home_b",
+            borderRadius: '20px'
         }}
         >
             <Box
@@ -27,8 +31,7 @@ function BoxThemComponent({Author, Text, Icon, Index}){
             borderRadius='20px'
             sx={{
                 width: window.innerWidth > 420 ? '50%' : window.innerWidth/4,
-                    height: window.innerWidth > 420 ? '50%' : window.innerHeight/4,
-                backgroundColor: Index % 2 === 0? "background.home_a" : "background.home_b"
+                height: window.innerWidth > 420 ? '50%' : window.innerHeight/4
             }}
             >
                 <Icon
