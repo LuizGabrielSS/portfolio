@@ -103,9 +103,10 @@ export default function FormComponent({SetMensagem, SetStatus, SetOpen}){
 
     return(
         <Box
-        m={5}
+        m={2}
         p={2}
-        width={window.innerWidth > 420 ? (window.innerWidth/3) : '100%'}
+        width={window.innerWidth > 420 ? (window.innerWidth/3) : 'auto'}
+        height={window.innerWidth > 420 ? 'auto' : '80%'}
         sx={{
             borderRadius: '10px',
             backgroundColor: 'rgba(255, 255, 255, 0.9)', // Set background to be slightly transparent

@@ -1,13 +1,19 @@
-import React from 'react'
-import { Box, Toolbar, Typography,CssBaseline } from '@mui/material'
+import React, { useState } from 'react'
+import { Box, Toolbar, Typography,CssBaseline, IconButton } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import MuiAppBar from '@mui/material/AppBar';
 import { useNavigate } from 'react-router-dom';
 
-import Navigator from '../navigator'
+import Navigator, {DrawerNavigator} from '../navigator'
 import {SwitchTranslate} from '../translate'
 
+import ReorderIcon from '@mui/icons-material/Reorder';
+import CloseIcon from '@mui/icons-material/Close';
 export default function Header({children}){
+
+    const[OpenList,SetOpenList] = useState(false)
+
+    const drawerWidth = (window.innerWidth/2.5)
 
     const AppBar = styled(MuiAppBar, {
         shouldForwardProp: (prop) => prop !== 'open',
@@ -17,6 +23,14 @@ export default function Header({children}){
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
         }),
+        ...(OpenList && {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create(['width', 'margin'], {
+              easing: theme.transitions.easing.sharp,
+              duration: theme.transitions.duration.enteringScreen,
+            }),
+          }),
       }));
 
     const navegacao = useNavigate()
@@ -28,6 +42,7 @@ export default function Header({children}){
             <CssBaseline />
             <AppBar 
             position="fixed" 
+            open={OpenList}
             sx={{
                 backgroundColor:"background.top",
             }}
@@ -38,6 +53,18 @@ export default function Header({children}){
                 justifyContent:"space-between"
                 }}
                 >
+                    {
+                    window.innerWidth> 420 
+                    ? null
+                    
+                    : <IconButton onClick={() => SetOpenList(!OpenList)}>
+                    {
+                        OpenList
+                        ?<CloseIcon/>
+                        :<ReorderIcon/>
+                    }
+                </IconButton>
+                }
                     <Box
                     display="flex"
                     alignItems="center"
@@ -70,12 +97,24 @@ export default function Header({children}){
                     alignContent="center"
                     justifyContent="center"
                     >
-                        <Navigator/>
+                        {
+                            window.innerWidth> 420 
+                            ? <Navigator/>
+                            : null
+                        }
                         <SwitchTranslate/>
                     </Box>
                 </Toolbar>
             </AppBar>
-            
+            {
+                window.innerWidth> 420 
+               ? null
+                : <DrawerNavigator 
+                    open={OpenList} 
+                    onClose={() => SetOpenList(false)}
+                    drawerWidth={drawerWidth}
+                />
+            }
             <Box 
             component="main" 
             marginTop={8}

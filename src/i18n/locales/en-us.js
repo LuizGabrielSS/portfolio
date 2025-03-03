@@ -1,5 +1,8 @@
 const routes = {
-    "contact":"Contact"
+    "contact":"Contact",
+    "project":"Projects",
+    "exp":"Experience",
+    "school":"Education",
 }
 
 const home = {

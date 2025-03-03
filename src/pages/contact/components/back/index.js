@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import LottieComponent from '../../../../components/lottie';
-import back from './back.json'
 
 export default function BackgroundComponent({children}){
 

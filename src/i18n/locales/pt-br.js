@@ -1,8 +1,8 @@
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-
-
 const routes = {
-    "contact":"Contato"
+    "contact":"Contato",
+    "project":"Projetos",
+    "exp":"Experiencia",
+    "school":"Formação",
 }
 
 const home = {
