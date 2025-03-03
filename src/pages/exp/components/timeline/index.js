@@ -10,11 +10,12 @@ function Info({information}){
 
     return (
         <Box
+        my={2}
         >
             <Typography
             variant={window.innerWidth> 420 ? "h5" : "body1"}
             sx={{
-                color: "text.home_b"
+                color: "text.home_b",
             }}
             >
                 {information}
@@ -28,15 +29,20 @@ function ComponentTimeLine({Title, time, Icon,setSelected,item,setOpen,index,las
 
     return(
         <Box
-        my={4}
+        my={3}
         onClick={() => {setSelected(item);setOpen(true)}}
         sx={{
             cursor: 'pointer',
+            transition: 'background-color 0.3s ease-in-out',
+            '&:hover': {
+                backgroundColor: 'background.home_b'
+            },
+            border: '1px solid',
+            borderRadius: '50px',
         }}
         display="flex"
         justifyContent="center"
         alignItems="center"
-        
         >
             <TimelineItem>
                 <TimelineOppositeContent>
@@ -49,6 +55,9 @@ function ComponentTimeLine({Title, time, Icon,setSelected,item,setOpen,index,las
                     /> 
                 </TimelineOppositeContent>
                 <TimelineSeparator>
+                <Box
+                my={1}
+                >
                     <TimelineDot>
                         <Icon
                         sx={{
@@ -56,6 +65,7 @@ function ComponentTimeLine({Title, time, Icon,setSelected,item,setOpen,index,las
                         }}
                         />
                     </TimelineDot>
+                    </Box>
                     {
                         index === last_item - 1
                         ? null
@@ -71,6 +81,7 @@ function ComponentTimeLine({Title, time, Icon,setSelected,item,setOpen,index,las
                     }/>
                 </TimelineContent>
             </TimelineItem>
+            
         </Box>
     )
 

@@ -7,6 +7,7 @@ import NotFoundScreen from '../pages/notfound'
 import HomeScreen from '../pages/home'
 import ContactScreen from '../pages/contact'
 import ExperienceScreen from '../pages/exp'
+import EducationScreen from '../pages/education'
 
 export default function RoutesFunction(){
 
@@ -31,6 +32,12 @@ export default function RoutesFunction(){
                     path="/exp"
                     element={
                         <ExperienceScreen/>
+                    }
+                />
+                <Route
+                    path="/education"
+                    element={
+                        <EducationScreen/>
                     }
                 />
                 <Route

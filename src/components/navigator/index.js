@@ -53,7 +53,7 @@ export default function Navigator(){
             /><BoxComponent
             name='school'
             navegacao={navegacao}
-            to='/school'
+            to='/education'
             />
             <BoxComponent
             name='contact'
@@ -114,7 +114,7 @@ export function DrawerNavigator({open, onClose, drawerWidth}){
                     <BoxComponent
                     name='school'
                     navegacao={navegacao}
-                    to='/school'
+                    to='/education'
                     />
                 </Box>
                 <Box
