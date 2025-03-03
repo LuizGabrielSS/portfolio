@@ -10,6 +10,7 @@ import HealingIcon from '@mui/icons-material/Healing';
 import CodeIcon from '@mui/icons-material/Code';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 
+
 function BoxThemComponent({Author, Text, Icon, Index}){
 
     return(

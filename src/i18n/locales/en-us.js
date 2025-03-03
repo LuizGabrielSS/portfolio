@@ -97,11 +97,56 @@ const contact = {
     }
 }
 
+const exp = {
+    "content":[
+        {
+            "title":"Helpdesk",
+            "year":"2021",
+            "month":"June",
+            "icon":"helper",
+            "year_end":"2022",
+            "month_end":"June",
+            "description":"As a helpdesk, I had the incredible opportunity to start getting to know the world of technology in practice and thus being able to understand what the real flow for the development of new technologies was and also learning how to create secure solutions",
+            "company":"Stone Co.",
+            "team":"Physical Security",
+            "technologies":["python","Mssql","Mysql","GCP"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png"
+        },
+        {
+            "title":"Junior Information Security Analyst",
+            "year":"2022",
+            "month":"June",
+            "icon":"analyst",
+            "year_end":"2024",
+            "month_end":"May",
+            "description":"As a security analyst, I had the opportunity to start creating my own solutions for the problems we had using technologies such as react and python to create new systems to facilitate our daily lives in a secure way",
+            "company":"Stone Co.",
+            "team":"Physical Security",
+            "technologies":["python","Mssql","Mysql","GCP","Javascript","React","React Native","Node js","Docker"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png",
+        },
+        {
+            "title":"Junior Developer",
+            "year":"2024",
+            "month":"May",
+            "icon":"dev",
+            "year_end":"Currently",
+            "month_end":"-",
+            "description":"As a developer at CIA, I have the daily opportunity to create tools and automations that make the day-to-day of other employees in my company even more practical and faster, so they have more time to focus on analytical activities",
+            "company":"Stone Co.",
+            "team":"CIA (Center for Intelligence and Automation)",
+            "technologies":["python","Mssql","Mysql","GCP","Javascript","React","React Native","Node js","Docker","Big query"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png",
+        }
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
-        "routes":routes
+        "routes":routes,
+        "exp":exp
     }
 }
 

@@ -97,11 +97,56 @@ const contact = {
     }
 }
 
+const exp = {
+    "content":[
+        {
+            "title":"Helpdesk",
+            "year":"2021",
+            "month":"Junho",
+            "icon":"helper",
+            "year_end":"2022",
+            "month_end":"Junho",
+            "description":"Como helpdesk tive a incrivel oportunidade de começar a conhecer o mundo da tecnologia na pratica e assim podendo entender como era o real fluxo para o desenvolvimento de novas tecnologias e tambem aprendendo como criar soluções seguras",
+            "company":"Stone Co.",
+            "team":"Segurança Fisica",
+            "technologies":["python","Mssql","Mysql","GCP"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png"
+        },
+        {
+            "title":"Analista Junior Segurança da informação",
+            "year":"2022",
+            "month":"Junho",
+            "icon":"analyst",
+            "year_end":"2024",
+            "month_end":"Maio",
+            "description":"Como analista de segurança tive a oportunidade de começar a criar minhas proprias soluções para os problemas que tinhamos utilizando de tecnologias como react e python para a criação de novos sistemas para facilitar e nosso dia a dia de forma segura",
+            "company":"Stone Co.",
+            "team":"Segurança Fisica",
+            "technologies":["python","Mssql","Mysql","GCP","Javascript","React","React Native","Node js","Docker"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png"
+        },
+        {
+            "title":"Desenvolvedor junior",
+            "year":"2024",
+            "month":"Maio",
+            "icon":"dev",
+            "year_end":"Atualmente",
+            "month_end":"-",
+            "description":"Como desenvolvedor na CIA tenho diariamente a oportunidade de criar ferramentas e automações que tornem o dia a dia de outros colaboradores da minha empresa ainda mais pratico e mais rapido, para que eles tenham mais tempo para focar em atividades analiticas",
+            "company":"Stone Co.",
+            "team":"CIA(Centro de Inteligencia e Automação)",
+            "technologies":["python","Mssql","Mysql","GCP","Javascript","React","React Native","Node js","Docker","Big query"],
+            "picture":"https://conteudos.xpi.com.br/wp-content/uploads/2024/05/stoneco-600.png"
+        },
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
-        "routes":routes
+        "routes":routes,
+        "exp":exp
     }
 }
 
