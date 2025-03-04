@@ -141,12 +141,32 @@ const exp = {
     ]
 }
 
+const school = {
+    "formation":[
+        {
+            "name":'Analise e desenvolvimento de sistema - Unicesumar',
+            "description":'Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!',
+            "tags":['Universidade','Graduação'],
+            "date":'2026, Jan',
+            'image':'/formation/unicesumar.jpg'
+        },
+        {
+            "name":'Analise e desenvolvimento de sistema - Unicesumars',
+            "description":'Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!',
+            "tags":['Universidade','Graduação'],
+            "date":'2026, Jan',
+            'image':'/formation/unicesumar.jpg'
+        },
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
         "routes":routes,
-        "exp":exp
+        "exp":exp,
+        "school":school
     }
 }
 
