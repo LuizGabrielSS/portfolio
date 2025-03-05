@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Card, CardActions, CardContent, CardMedia, Chip, IconButton, Typography } from '@mui/material';
-import DownloadIcon from '@mui/icons-material/Download';
+import { Box, Card, CardActions, CardContent, CardMedia, Chip, Typography } from '@mui/material';
 
 
 function GenerateColor(text){
@@ -21,13 +20,13 @@ function GenerateColor(text){
 
 }
 
-function BoxesComponent({name, description, tags, date, Image}){
+function BoxesComponent({name, description, tags, date, Image, institution}){
 
     return(
         <Box
         m={2}
         sx={{
-            width: window.innerWidth > 420 ? "30%" : "100%",
+            width: window.innerWidth > 420 ? "20%" : "40%",
             height: window.innerWidth > 420 ? "100%" : "100%",
         }}
         >
@@ -45,15 +44,19 @@ function BoxesComponent({name, description, tags, date, Image}){
                 component="img"
                 image={`${process.env.PUBLIC_URL}${Image}`}
                 title={name}
+                sx={{
+                    height: window.innerWidth > 420 ? (window.innerWidth/10) : (window.innerWidth/2) ,
+                    objectFit: "cover"
+                }}
                 />
                 <CardContent>
                     <Typography
-                    variant="h5"
+                    variant={window.innerWidth > 420 ? "h5" : "body1"}
                     >
                         {name}
                     </Typography>
                     <Typography
-                    variant="body1"
+                    variant={window.innerWidth > 420 ? "body1" : "body2"}
                     >
                         {description}
                     </Typography>
@@ -80,22 +83,26 @@ function BoxesComponent({name, description, tags, date, Image}){
                     </Box>
                 </CardContent>
                 <CardActions
-                sx={{
-                    justifyContent: "flex-end",
-                    paddingRight: "10px"
-                }}
-                >    
+                >
                     <Box>
-                        <Typography>
+                        <Typography
+                        variant={window.innerWidth > 420 ? "body1" : "body2"}
+                        >
+                            {institution}
+                        </Typography>
+                    </Box>    
+                    <Box
+                    sx={{
+                        justifyContent: "flex-end",
+                        paddingRight: "10px"
+                    }}
+                    >
+                        <Typography
+                        variant={window.innerWidth > 420 ? "body1" : "body2"}
+                        >
                             {date}
                         </Typography>
-                    </Box>           
-                    <Box>
-                        <IconButton>
-                            <DownloadIcon 
-                            />
-                        </IconButton>    
-                    </Box>                 
+                    </Box>                            
                     </CardActions>
             </Card>
         </Box>
@@ -120,6 +127,7 @@ export default function StudiesComponent({data}){
                     description={study.description}
                     tags={study.tags}
                     date={study.date}
+                    institution={study.institution}
                     />
                 ))
             }

@@ -142,20 +142,237 @@ const exp = {
 }
 
 const school = {
+    "search": {
+        "label":"Pesquisar",
+        "placeholder":"Digite sua pesquisa aqui"
+    },
+    "filter": {
+        "label":"Filtro"
+    },
     "formation":[
         {
-            "name":'Analise e desenvolvimento de sistema - Unicesumar',
-            "description":'Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!',
+            "name":'Analise e desenvolvimento de sistema',
+            "institution":"Unicesumar",
+            "description":'Formação voltada para a criação e analise de projetos de novos sistemas e softwares, com foco em segurança e performance',
             "tags":['Universidade','Graduação'],
             "date":'2026, Jan',
             'image':'/formation/unicesumar.jpg'
         },
         {
-            "name":'Analise e desenvolvimento de sistema - Unicesumars',
-            "description":'Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!',
-            "tags":['Universidade','Graduação'],
-            "date":'2026, Jan',
-            'image':'/formation/unicesumar.jpg'
+            "name":'UI Design para Devs',
+            "institution":"Alura",
+            "description":'Construa interfaces atraentes com fundamentos do Design',
+            "tags":['UI','Design'],
+            "date":'2025, Fev',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Criando automações com visão computacional',
+            "institution":"Botcity",
+            "description":'Desenvolvimento de RPAs com o uso de visão computacional para aplicações desktop',
+            "tags":['Python','Botcity','RPA'],
+            "date":'2024, Out',
+            'image':'/formation/botcity.jpg'
+        },
+        {
+            "name":'Desenvolvimento de automações em Python com BotCity',
+            "institution":"Botcity",
+            "description":'Desenvolvimento de automações com o uso da lib botcity',
+            "tags":['Python','Botcity','RPA'],
+            "date":'2024, Out',
+            'image':'/formation/botcity.jpg'
+        },
+        {
+            "name":'Orquestração de python RPA',
+            "institution":"Botcity",
+            "description":'Orquestrando RPAs com o uso da plataforma botcity',
+            "tags":['Python','Botcity','RPA'],
+            "date":'2024, Out',
+            'image':'/formation/botcity.jpg'
+        },
+        {
+            "name":'Segurança com python RPA',
+            "institution":"Botcity",
+            "description":'Segurança das RPAs com o uso da plataforma botcity',
+            "tags":['Python','Botcity','RPA'],
+            "date":'2024, Out',
+            'image':'/formation/botcity.jpg'
+        },
+        {
+            "name":'Google Looker Studio',
+            "institution":"Alura",
+            "description":'Domine uma das mais populares ferramentas de Business Intelligence do mercado e aprenda a construir dashboards interativos usando Google Looker Studio.',
+            "tags":['Looker','GCP','Data Analysis'],
+            "date":'2024, Ago',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Avançando em Data Science com python',
+            "institution":"Alura",
+            "description":'Desenvolvendo de forma melhor e mais pratica a analise de dados com python',
+            "tags":['Python','Data Analysis','Data Science'],
+            "date":'2024, Jul',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'BigQuery',
+            "institution":"Alura",
+            "description":'Domine o banco de dados da nuvem Google',
+            "tags":['GCP','Data Analysis','BigQuery'],
+            "date":'2024, Jun',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Otimização com python',
+            "institution":"Alura",
+            "description":'Otimização de analise de dados com o uso de python',
+            "tags":['Python','Data Analysis'],
+            "date":'2024, Jun',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Python para data science',
+            "institution":"Alura",
+            "description":'Aprenda Python com foco em Data Science!',
+            "tags":['Python','Data Analysis','Data Science'],
+            "date":'2024, Jun',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Começando com flask: Framework web de python',
+            "institution":"Alura",
+            "description":'Crie aplicações web em Python usando Flask',
+            "tags":['Python','Flask','API'],
+            "date":'2024, Mar',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'RPA com UiPath: Curso Prático - Aprenda do Zero',
+            "institution":"Alura",
+            "description":'Desenvolvimento de RPA com o uso da plataforma UiPath',
+            "tags":['UiPath','RPA'],
+            "date":'2024, Mar',
+            'image':'/formation/uipath.jpg'
+        },
+        {
+            "name":'Segurança de software com OWASP',
+            "institution":"Alura",
+            "description":'Aprenda a lidar com o Top 10 dos maiores riscos de segurança em uma aplicação web e conheça o padrão de verificação de segurança de aplicações.',
+            "tags":['Segurança','OWASP'],
+            "date":'2024, Fev',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'ISO 31000:2018 – RISK MANAGEMENT (FOUNDATION)',
+            "institution":"Standars and Best pratice",
+            "description":'A ISO 31000:2018 é uma norma internacional que fornece diretrizes para a gestão de riscos em organizações, visando melhorar a tomada de decisões e alcançar objetivos.',
+            "tags":['Segurança','ISO'],
+            "date":'2024, Jan',
+            'image':'/formation/sbp.jpg'
+        },
+        {
+            "name":'ISO/IEC 20000:2018 – FUNDAÇÃO DE SISTEMAS DE GERENCIAMENTO DE SERVIÇOS DE TI (ITSMS)',
+            "institution":"Standars and Best pratice",
+            "description":'A ISO/IEC 20000:2018 estabelece requisitos para um sistema de gestão de serviços de TI, focando na entrega eficaz e eficiente de serviços com qualidade.',
+            "tags":['Segurança','ISO'],
+            "date":'2024, Jan',
+            'image':'/formation/sbp.jpg'
+        },
+        {
+            "name":'ISO/IEC 27001:2022 INFORMATION SKILLFRONT SECURITY ASSOCIATE',
+            "institution":"SkillFront",
+            "description":'A ISO/IEC 27001:2022 define os requisitos para um sistema de gestão de segurança da informação, visando proteger dados e garantir a confidencialidade, integridade e disponibilidade das informações.',
+            "tags":['Segurança','ISO'],
+            "date":'2023, Nov',
+            'image':'/formation/skillfront.jpg'
+        },
+        {
+            "name":'Gerencie estados em React com Redux',
+            "institution":"Alura",
+            "description":'Escale o gerenciamento de estados em React com diferentes soluções',
+            "tags":['React','Redux','web','Javascript'],
+            "date":'2023, Nov',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Desenvolva aplicações web com javascript',
+            "institution":"Alura",
+            "description":'Domine uma das linguagens de programação mais usadas no mercado e desenvolva um projeto com HTML, CSS e JavaScript do zero.',
+            "tags":['web','Javascript'],
+            "date":'2023, Mar',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Desenvolva seu primeiro app com React Native',
+            "institution":"Alura",
+            "description":'Aprenda os primeiros passos do React Native e crie aplicativos para Android e iOS simultaneamente',
+            "tags":['React','React native','mobile','Javascript'],
+            "date":'2022, Ago',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'React JS',
+            "institution":"Alura",
+            "description":'Crie aplicações web modernas com React!',
+            "tags":['React','web','Javascript'],
+            "date":'2022, Mai',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Front end',
+            "institution":"Alura",
+            "description":'Do zero a uma carreira de sucesso no mercado web, com HTML, CSS, JavaScript!',
+            "tags":['web','Javascript','HTML','CSS'],
+            "date":'2022, Abr',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Django',
+            "institution":"Alura",
+            "description":'Criando sites e experiências na web com Python',
+            "tags":['web','Python','HTML','CSS'],
+            "date":'2022, Jan',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Aprenda a programar em python com orientação a objetos',
+            "institution":"Alura",
+            "description":'Aprenda a linguagem, mergulhando no paradigma da orientação a objetos',
+            "tags":['Python'],
+            "date":'2022, Jan',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Iniciante em programação',
+            "institution":"Alura",
+            "description":'O caminho das pedras para entrar no universo da programação e começar com a criação de sites utilizando as linguagens populares CSS, HTML e JavaScript.',
+            "tags":['starter'],
+            "date":'2022, Jan',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Aprenda a programar em Javascript com foco no back-end',
+            "institution":"Alura",
+            "description":'Aprenda a usar JavaScript fora do navegador',
+            "tags":['starter'],
+            "date":'2022, Jan',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'HTML e CSS',
+            "institution":"Alura",
+            "description":'Crie páginas incríveis com as tecnologias da Web',
+            "tags":['web','HTML','CSS'],
+            "date":'2022, Jan',
+            'image':'/formation/alura.jpg'
+        },
+        {
+            "name":'Desenvolva aplicações Web Acessíveis',
+            "institution":"Alura",
+            "description":'Melhore à experiência dos usuários com boas práticas de Acessibilidade em Front-End',
+            "tags":['web','acessibilidade'],
+            "date":'2021, Out',
+            'image':'/formation/alura.jpg'
         },
     ]
 }

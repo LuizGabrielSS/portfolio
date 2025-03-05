@@ -98,6 +98,7 @@ const contact = {
 }
 
 const exp = {
+    
     "content":[
         {
             "title":"Helpdesk",
@@ -141,12 +142,249 @@ const exp = {
     ]
 }
 
+const school = {
+    "search": {
+        "label":"Search",
+        "placeholder":"Type your search here"
+    },
+    "filter": {
+        "label":"Filter"
+    },
+    "formation":[
+        {
+            "name": "System Analysis and Development",
+            "institution": "Unicesumar",
+            "description": "Training focused on the creation and analysis of new system and software projects, with an emphasis on security and performance",
+            "tags": ["University", "Undergraduate"],
+            "date": "Jan, 2026",
+            "image": "/formation/unicesumar.jpg"
+        },
+        {
+            "name": "UI Design for Devs",
+            "institution": "Alura",
+            "description": "Build attractive interfaces with design fundamentals",
+            "tags": ["UI", "Design"],
+            "date": "Feb, 2025",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Creating Automations with Computer Vision",
+            "institution": "Botcity",
+            "description": "Development of RPAs using computer vision for desktop applications",
+            "tags": ["Python", "Botcity", "RPA"],
+            "date": "Oct, 2024",
+            "image": "/formation/botcity.jpg"
+        },
+        {
+            "name": "Automation Development in Python with BotCity",
+            "institution": "Botcity",
+            "description": "Development of automations using the BotCity library",
+            "tags": ["Python", "Botcity", "RPA"],
+            "date": "Oct, 2024",
+            "image": "/formation/botcity.jpg"
+        },
+        {
+            "name": "Python RPA Orchestration",
+            "institution": "Botcity",
+            "description": "Orchestrating RPAs using the BotCity platform",
+            "tags": ["Python", "Botcity", "RPA"],
+            "date": "Oct, 2024",
+            "image": "/formation/botcity.jpg"
+        },
+        {
+            "name": "Security with Python RPA",
+            "institution": "Botcity",
+            "description": "Security of RPAs using the BotCity platform",
+            "tags": ["Python", "Botcity", "RPA"],
+            "date": "Oct, 2024",
+            "image": "/formation/botcity.jpg"
+        },
+        {
+            "name": "Google Looker Studio",
+            "institution": "Alura",
+            "description": "Master one of the most popular Business Intelligence tools on the market and learn how to build interactive dashboards using Google Looker Studio.",
+            "tags": ["Looker", "GCP", "Data Analysis"],
+            "date": "Aug, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Advancing in Data Science with Python",
+            "institution": "Alura",
+            "description": "Improving and making data analysis with Python better and more practical",
+            "tags": ["Python", "Data Analysis", "Data Science"],
+            "date": "Jul, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "BigQuery",
+            "institution": "Alura",
+            "description": "Master Google Cloud's database",
+            "tags": ["GCP", "Data Analysis", "BigQuery"],
+            "date": "Jun, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Optimization with Python",
+            "institution": "Alura",
+            "description": "Optimizing data analysis using Python",
+            "tags": ["Python", "Data Analysis"],
+            "date": "Jun, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Python for Data Science",
+            "institution": "Alura",
+            "description": "Learn Python with a focus on Data Science!",
+            "tags": ["Python", "Data Analysis", "Data Science"],
+            "date": "Jun, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Getting Started with Flask: Python Web Framework",
+            "institution": "Alura",
+            "description": "Create web applications in Python using Flask",
+            "tags": ["Python", "Flask", "API"],
+            "date": "Mar, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "RPA with UiPath: Practical Course - Learn from Scratch",
+            "institution": "Alura",
+            "description": "Develop RPA using the UiPath platform",
+            "tags": ["UiPath", "RPA"],
+            "date": "Mar, 2024",
+            "image": "/formation/uipath.jpg"
+        },
+        {
+            "name": "Software Security with OWASP",
+            "institution": "Alura",
+            "description": "Learn how to handle the Top 10 security risks in a web application and understand the application security verification standard.",
+            "tags": ["Security", "OWASP"],
+            "date": "Feb, 2024",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "ISO 31000:2018 – RISK MANAGEMENT (FOUNDATION)",
+            "institution": "Standards and Best Practice",
+            "description": "ISO 31000:2018 is an international standard that provides guidelines for risk management in organizations, aiming to improve decision-making and achieve objectives.",
+            "tags": ["Security", "ISO"],
+            "date": "Jan, 2024",
+            "image": "/formation/sbp.jpg"
+        },
+        {
+            "name": "ISO/IEC 20000:2018 – FOUNDATION OF IT SERVICE MANAGEMENT SYSTEMS (ITSMS)",
+            "institution": "Standards and Best Practice",
+            "description": "ISO/IEC 20000:2018 establishes requirements for an IT service management system, focusing on the effective and efficient delivery of services with quality.",
+            "tags": ["Security", "ISO"],
+            "date": "Jan, 2024",
+            "image": "/formation/sbp.jpg"
+        },
+        {
+            "name": "ISO/IEC 27001:2022 INFORMATION SKILLFRONT SECURITY ASSOCIATE",
+            "institution": "SkillFront",
+            "description": "ISO/IEC 27001:2022 defines the requirements for an information security management system, aiming to protect data and ensure the confidentiality, integrity, and availability of information.",
+            "tags": ["Security", "ISO"],
+            "date": "Nov, 2023",
+            "image": "/formation/skillfront.jpg"
+        },
+        {
+            "name": "Manage States in React with Redux",
+            "institution": "Alura",
+            "description": "Scale state management in React with different solutions",
+            "tags": ["React", "Redux", "Web", "JavaScript"],
+            "date": "Nov, 2023",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Develop Web Applications with JavaScript",
+            "institution": "Alura",
+            "description": "Master one of the most widely used programming languages in the market and develop a project with HTML, CSS, and JavaScript from scratch.",
+            "tags": ["Web", "JavaScript"],
+            "date": "Mar, 2023",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Develop Your First App with React Native",
+            "institution": "Alura",
+            "description": "Learn the first steps of React Native and create apps for both Android and iOS simultaneously",
+            "tags": ["React", "React Native", "Mobile", "JavaScript"],
+            "date": "Aug, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "React JS",
+            "institution": "Alura",
+            "description": "Create modern web applications with React!",
+            "tags": ["React", "Web", "JavaScript"],
+            "date": "May, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Front End",
+            "institution": "Alura",
+            "description": "From scratch to a successful career in the web market, with HTML, CSS, and JavaScript!",
+            "tags": ["Web", "JavaScript", "HTML", "CSS"],
+            "date": "Apr, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Django",
+            "institution": "Alura",
+            "description": "Creating websites and web experiences with Python",
+            "tags": ["Web", "Python", "HTML", "CSS"],
+            "date": "Jan, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Learn Python Programming with Object-Oriented Programming",
+            "institution": "Alura",
+            "description": "Learn the language by diving into the object-oriented programming paradigm",
+            "tags": ["Python"],
+            "date": "Jan, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Beginner in Programming",
+            "institution": "Alura",
+            "description": "The path to entering the world of programming and starting with website creation using popular languages such as CSS, HTML, and JavaScript.",
+            "tags": ["starter"],
+            "date": "Jan, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Learn JavaScript Programming with a Focus on Back-End",
+            "institution": "Alura",
+            "description": "Learn how to use JavaScript outside the browser",
+            "tags": ["starter"],
+            "date": "Jan, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "HTML and CSS",
+            "institution": "Alura",
+            "description": "Create amazing pages with web technologies",
+            "tags": ["Web", "HTML", "CSS"],
+            "date": "Jan, 2022",
+            "image": "/formation/alura.jpg"
+        },
+        {
+            "name": "Develop Accessible Web Applications",
+            "institution": "Alura",
+            "description": "Improve the user experience with best practices for Accessibility in Front-End",
+            "tags": ["Web", "Accessibility"],
+            "date": "Oct, 2021",
+            "image": "/formation/alura.jpg"
+        }
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
         "routes":routes,
-        "exp":exp
+        "exp":exp,
+        "school":school
     }
 }
 
