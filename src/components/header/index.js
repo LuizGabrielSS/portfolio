@@ -6,9 +6,11 @@ import { useNavigate } from 'react-router-dom';
 
 import Navigator, {DrawerNavigator} from '../navigator'
 import {SwitchTranslate} from '../translate'
+import SwitchMode from '../switchmode';
 
 import ReorderIcon from '@mui/icons-material/Reorder';
 import CloseIcon from '@mui/icons-material/Close';
+
 export default function Header({children}){
 
     const[OpenList,SetOpenList] = useState(false)
@@ -56,7 +58,6 @@ export default function Header({children}){
                     {
                     window.innerWidth> 420 
                     ? null
-                    
                     : <IconButton onClick={() => SetOpenList(!OpenList)}>
                     {
                         OpenList
@@ -101,6 +102,11 @@ export default function Header({children}){
                             window.innerWidth> 420 
                             ? <Navigator/>
                             : null
+                        }
+                        {
+                            window.innerWidth> 420 
+                            ? <SwitchMode/>
+                            : <SwitchMode/>
                         }
                         <SwitchTranslate/>
                     </Box>

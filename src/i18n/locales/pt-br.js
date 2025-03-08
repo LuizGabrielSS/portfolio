@@ -56,7 +56,7 @@ const home = {
             },
             {
                 "author":"Matheus, Jornalista",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text":"Luiz é uma daquelas pessoas que você pensa em ligar quando o mundo parece que vai se desestruturar aos seus pés.",
                 "icon":"jornalista"
             },
             {

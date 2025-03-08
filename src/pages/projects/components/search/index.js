@@ -21,7 +21,9 @@ export default function SearchComponent({original,setdata}){
     }
 
     return(
-        <Box>
+        <Box
+        m={5}
+        >
             <TextField
             label={t('projects.search.label')}
             placeholder={t('projects.search.placeholder')}

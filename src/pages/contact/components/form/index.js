@@ -31,7 +31,7 @@ function InputComponent({SetInformacao,Informacao,Titulo,PlaceHolder,multiline=f
         <Box
         m={2}
         sx={{
-            backgroundColor: '#fff'
+            backgroundColor: "background.top"
         }}
         >
             <TextField
@@ -109,7 +109,7 @@ export default function FormComponent({SetMensagem, SetStatus, SetOpen}){
         height={window.innerWidth > 420 ? 'auto' : '80%'}
         sx={{
             borderRadius: '10px',
-            backgroundColor: 'rgba(255, 255, 255, 0.9)', // Set background to be slightly transparent
+            backgroundColor: "background.top", // Set background to be slightly transparent
             backdropFilter: 'blur(10px)', // Apply blur effect
         }}
         >
