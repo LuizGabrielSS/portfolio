@@ -46,11 +46,18 @@ export default function Navigator(){
             name='project'
             navegacao={navegacao}
             to='/projects'
-            /><BoxComponent
+            />
+            <BoxComponent
+            name='ability'
+            navegacao={navegacao}
+            to='/ability'
+            />
+            <BoxComponent
             name='exp'
             navegacao={navegacao}
             to='/exp'
-            /><BoxComponent
+            />
+            <BoxComponent
             name='school'
             navegacao={navegacao}
             to='/education'
@@ -91,6 +98,18 @@ export function DrawerNavigator({open, onClose, drawerWidth}){
                     name='project'
                     navegacao={navegacao}
                     to='/projects'
+                    />
+                </Box>
+                <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                mt={3}
+                >
+                    <BoxComponent
+                    name='ability'
+                    navegacao={navegacao}
+                    to='/ability'
                     />
                 </Box>
                 <Box

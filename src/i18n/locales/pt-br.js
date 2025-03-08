@@ -3,6 +3,7 @@ const routes = {
     "project":"Projetos",
     "exp":"Experiencia",
     "school":"Formação",
+    "ability":"Habilidades"
 }
 
 const home = {
@@ -14,19 +15,19 @@ const home = {
         },
         "them":[
             {
-                "author":"Gabriele, Turismologa",
-                "text":"É uma honra acompanhar os desdobramentos e a creditar na evolução dele como individuo, amigo e profissional",
-                "icon":"turismologa"
-            },
-            {
-                "author":"Matheus, Jornalista",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"jornalista"
-            },
-            {
                 "author":"Adriana, ACS",
                 "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
                 "icon":"ACS"
+            },
+            {
+                "author":"Alisson, Desenvolvedor",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Dev"
+            },
+            {
+                "author":"Alessandro, Lider",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Tech Lead"
             },
             {
                 "author":"Davi, TR",
@@ -39,14 +40,9 @@ const home = {
                 "icon":"atuario"
             },
             {
-                "author":"Louise, Filosofa",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"filosofa"
-            },
-            {
-                "author":"Roberto, Desenvolvedor",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Dev"
+                "author":"Gabriele, Turismologa",
+                "text":"É uma honra acompanhar os desdobramentos e a creditar na evolução dele como individuo, amigo e profissional",
+                "icon":"turismologa"
             },
             {
                 "author":"Gustavo, Desenvolvedor",
@@ -54,20 +50,25 @@ const home = {
                 "icon":"Dev"
             },
             {
-                "author":"Alisson, Desenvolvedor",
+                "author":"Louise, Filosofa",
                 "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Dev"
+                "icon":"filosofa"
             },
             {
-                "author":"Alessandro, Tech Lead",
+                "author":"Matheus, Jornalista",
                 "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Tech Lead"
+                "icon":"jornalista"
             },
             {
                 "author":"Pedro, Tech Lead",
                 "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
                 "icon":"Tech Lead"
-            }
+            },  
+            {
+                "author":"Roberto, Desenvolvedor",
+                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "icon":"Dev"
+            },        
         ]
     }
     }
@@ -446,6 +447,12 @@ const projects = {
     ]
 }
 
+const notfound = {
+    "title":"Pagina não encontrada",
+    "description":"Parece que a pagina que você tentou acessar não existe, por favor, retorne a pagina inicial e tente novamente",
+    "button":"OK"
+}
+
 const Translation = {
     translations: {
         "home":home,
@@ -453,7 +460,8 @@ const Translation = {
         "routes":routes,
         "exp":exp,
         "school":school,
-        "projects":projects
+        "projects":projects,
+        "notfound":notfound
     }
 }
 

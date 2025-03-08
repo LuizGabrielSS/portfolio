@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
 
-
 export default function ButtonComponent({Text,Action,Disabled=false,variant="outlined",color='button.home_b',Icon}){
 
     return(
