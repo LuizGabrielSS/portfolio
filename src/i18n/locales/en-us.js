@@ -447,6 +447,111 @@ const projects = {
     ]
 }
 
+const abilities = {
+    "data":{
+        "softskill":[
+            {
+                "name": "Systemic Vision",
+                "level": 90,
+                "type": "softskill",
+                "description": "Ability to understand and analyze a system as a whole, identifying the interactions and relationships between its components and processes"
+            },
+            {
+                "name": "Learning",
+                "level": 95,
+                "type": "softskill",
+                "description": "Ability to acquire new knowledge and skills quickly and efficiently, adapting to new situations and challenges"
+            },
+            {
+                "name": "Planning",
+                "level": 70,
+                "type": "softskill",
+                "description": "Ability to organize and structure tasks and activities efficiently, ensuring they are carried out effectively and within the established deadline"
+            },
+            {
+                "name": "Responsibility",
+                "level": 80,
+                "type": "softskill",
+                "description": "Ability to fulfill obligations and commitments, delivering quality results within the established deadline"
+            },
+            {
+                "name": "Conversation",
+                "level": 75,
+                "type": "softskill",
+                "description": "Ability to communicate clearly and effectively with others, conveying information accurately and objectively"
+            },
+            {
+                "name": "Creativity",
+                "level": 90,
+                "type": "softskill",
+                "description": "Ability to create innovative and effective solutions for various problems and challenges"
+            }            
+        ],
+        "hardskill":[
+            {
+                "name": "UiPath",
+                "level": 50,
+                "type": "hardskill",
+                "description": "Creation of RPAs using the platform to assist with repetitive and manual tasks"
+            },
+            {
+                "name": "Botcity",
+                "level": 60,
+                "type": "hardskill",
+                "description": "Creation of RPAs using the framework to assist with computer vision"
+            },
+            {
+                "name": "Flask",
+                "level": 80,
+                "type": "hardskill",
+                "description": "Creation and management of REST APIs using the framework"
+            },
+            {
+                "name": "React Native",
+                "level": 90,
+                "type": "hardskill",
+                "description": "Creation of mobile applications using the framework and its features"
+            },
+            {
+                "name": "React",
+                "level": 95,
+                "type": "hardskill",
+                "description": "Creation of web pages using the framework and its features"
+            },
+            {
+                "name": "Postgres",
+                "level": 75,
+                "type": "hardskill",
+                "description": "Manipulation and management of databases using the language"
+            },
+            {
+                "name": "SQLserver/MsSQL",
+                "level": 70,
+                "type": "hardskill",
+                "description": "Manipulation and management of databases using SQL language"
+            },
+            {
+                "name": "MySQL",
+                "level": 60,
+                "type": "hardskill",
+                "description": "Manipulation and management of databases using SQL language"
+            },
+            {
+                "name": "Javascript",
+                "level": 65,
+                "type": "hardskill",
+                "description": "Creation of web and mobile applications using the language and its frameworks, as well as knowledge of creating APIs with the language in the backend"
+            },
+            {
+                "name": "Python",
+                "level": 90,
+                "type": "hardskill",
+                "description": "Creation of APIs and automations for various uses, as well as knowledge in creating web pages and full applications using the language"
+            }            
+        ]
+    }
+}
+
 const notfound = {
     "title": "Page not found",
     "description": "It looks like the page you tried to access does not exist, please return to the home page and try again",
@@ -461,6 +566,7 @@ const Translation = {
         "exp":exp,
         "school":school,
         "projects":projects,
+        "abilities":abilities,
         "notfound":notfound
     }
 }
