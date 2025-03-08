@@ -103,7 +103,7 @@ function BoxesComponent({name, description, tags, date, Image, institution}){
                             {date}
                         </Typography>
                     </Box>                            
-                    </CardActions>
+                </CardActions>
             </Card>
         </Box>
     )

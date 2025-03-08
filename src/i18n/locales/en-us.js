@@ -98,7 +98,6 @@ const contact = {
 }
 
 const exp = {
-    
     "content":[
         {
             "title":"Helpdesk",
@@ -378,13 +377,83 @@ const school = {
     ]
 }
 
+const projects = {
+    "search": {
+        "label":"Search",
+        "placeholder":"Type your search here"
+    },
+    "data":[
+        {
+            "name": "Agitae",
+            "description": "An old project on how to create a possible app to hire parties in a more practical way",
+            "language": "Javascript",
+            "tech": ["react-native", "expo"],
+            "github": "https://github.com/LuizGabrielSS/Agitae2.0",
+            "type": "mobile",
+            "image": "projects/agitae.jpeg",
+            "url":null
+        },
+        {
+            "name": "Expo-CEP",
+            "description": "A simple project just to practice using APIs in React Native and also to test the use of free APIs for postal codes (CEP)",
+            "language": "Javascript",
+            "tech": ["react-native", "axios", "expo"],
+            "github": "https://github.com/LuizGabrielSS/Expo-CEP",
+            "type": "mobile",
+            "image": "projects/expo_cep.jpeg",
+            "url":null
+        },
+        {
+            "name": "Web Recipes",
+            "description": "One of the projects every developer creates at some point, a Pokedex, a simple way to practice a new language for frontend and its possibilities",
+            "language": "Javascript",
+            "tech": ["react", "axios"],
+            "github": "https://github.com/LuizGabrielSS/pokedex",
+            "type": "frontend",
+            "url": "https://luizgabrielss.github.io/pokedex/",
+            "image": "projects/pokedex.jpeg"
+        },
+        {
+            "name": "Web Recipes",
+            "description": "A project that, using an API, creates a web page where the user can input the ingredients they have in their fridge and it will show possible recipes and details that are missing",
+            "language": "Javascript",
+            "tech": ["react", "axios"],
+            "github": "https://github.com/LuizGabrielSS/receitas-web",
+            "type": "frontend",
+            "url": "https://luizgabrielss.github.io/receitas-web/",
+            "image": "projects/receitas.jpeg"
+        },
+        {
+            "name": "Movies Web",
+            "description": "A simple project using an API to get movie information and create a web page to get movie details and ratings",
+            "language": "Javascript",
+            "tech": ["react", "axios"],
+            "github": "https://github.com/LuizGabrielSS/movies-web",
+            "type": "frontend",
+            "url": "https://luizgabrielss.github.io/movies-web/",
+            "image": "projects/movies.jpeg"
+        },
+        {
+            "name": "Lazy Dev",
+            "description": "A collection of personal projects to make developers' lives easier, with small projects such as an email reader",
+            "language": "python",
+            "tech": ["hugging face", "translate"],
+            "github": "https://github.com/LuizGabrielSS/lazy-dev",
+            "type": "backend",
+            "image": "projects/lazy.jpeg",
+            "url":null
+        }
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
         "routes":routes,
         "exp":exp,
-        "school":school
+        "school":school,
+        "projects":projects
     }
 }
 

@@ -377,13 +377,83 @@ const school = {
     ]
 }
 
+const projects = {
+    "search": {
+        "label":"Pesquisar",
+        "placeholder":"Digite sua pesquisa aqui"
+    },
+    "data":[
+        {
+            "name":"Agitae",
+            "description":"Um projeto antigo de como criar um possivel aplicativo para contratar festas de forma mais pratica",
+            "language":"Javascript",
+            "tech":["react-native","expo"],
+            "github":"https://github.com/LuizGabrielSS/Agitae2.0",
+            "type":"mobile",
+            "image":"/projects/agitae.jpeg",
+            "url":null
+        },
+        {
+            "name":"Expo-CEP",
+            "description":"Um projeto simples apenas para praticar o uso de APIs no react native e tambem para testar o uso de APIs gratuitas para CEP",
+            "language":"Javascript",
+            "tech":["react-native","axios","expo"],
+            "github":"https://github.com/LuizGabrielSS/Expo-CEP",
+            "type":"mobile",
+            "image":"/projects/expo_cep.jpeg",
+            "url":null
+        },
+        {
+            "name":"Receitas Web",
+            "description":"Um dos projetos que todo dev em algum momento cria, uma pokedex, um jeito simples de praticar uma nova linguagem para frontend e tambem as suas possibilidades",
+            "language":"Javascript",
+            "tech":["react","axios"],
+            "github":"https://github.com/LuizGabrielSS/pokedex",
+            "type":"frontend",
+            "url":"https://luizgabrielss.github.io/pokedex/",
+            "image":"/projects/pokedex.jpeg"
+        },
+        {
+            "name":"Receitas Web",
+            "description":"Um projeto que com o uso de API consegue criar uma pagina web onde o usuario pode colocar os ingredientes que tem em sua geladeira e irá mostrar para ele as possiveis receitas e seus detalhes que faltam",
+            "language":"Javascript",
+            "tech":["react","axios"],
+            "github":"https://github.com/LuizGabrielSS/receitas-web",
+            "type":"frontend",
+            "url":"https://luizgabrielss.github.io/receitas-web/",
+            "image":"/projects/receitas.jpeg"
+        },
+        {
+            "name":"Movies Web",
+            "description":"Um projeto simples utilizando uma API para obter informações de filmes e criar uma pagina web para obter informações e classificações de filmes",
+            "language":"Javascript",
+            "tech":["react","axios"],
+            "github":"https://github.com/LuizGabrielSS/movies-web",
+            "type":"frontend",
+            "url":"https://luizgabrielss.github.io/movies-web/",
+            "image":"/projects/movies.jpeg"
+        },
+        {
+            "name":"Lazy Dev",
+            "description":"Uma coleção de projetos pessoais para tornar a vida dos devs mais praticas, com pequenos projetos com codigos como um leitor de email",
+            "language":"python",
+            "tech":["hugging face","translate"],
+            "github":"https://github.com/LuizGabrielSS/lazy-dev",
+            "type":"backend",
+            "image":"/projects/lazy.jpeg",
+            "url":null
+        },
+    ]
+}
+
 const Translation = {
     translations: {
         "home":home,
         "contact":contact,
         "routes":routes,
         "exp":exp,
-        "school":school
+        "school":school,
+        "projects":projects
     }
 }
 

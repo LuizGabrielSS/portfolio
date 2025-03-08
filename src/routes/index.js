@@ -8,6 +8,7 @@ import HomeScreen from '../pages/home'
 import ContactScreen from '../pages/contact'
 import ExperienceScreen from '../pages/exp'
 import EducationScreen from '../pages/education'
+import ProjectsScreen from '../pages/projects'
 
 export default function RoutesFunction(){
 
@@ -38,6 +39,12 @@ export default function RoutesFunction(){
                     path="/education"
                     element={
                         <EducationScreen/>
+                    }
+                />
+                <Route
+                    path="/projects"
+                    element={
+                        <ProjectsScreen/>
                     }
                 />
                 <Route
