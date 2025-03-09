@@ -113,9 +113,6 @@ function BoxesComponent({name, description, language, tech, github, type, image,
                     component="img"
                     image={`${process.env.PUBLIC_URL}${image}`}
                     title={name}
-                    sx={{
-                        height: window.innerWidth > 420 ? (window.innerHeight/3) : (window.innerHeight/3),
-                    }}
                     />
             </Card>
         </Box>
