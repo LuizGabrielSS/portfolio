@@ -36,17 +36,17 @@ const home = {
             },
             {
                 "author":"Ezequiel, Atuário",
-                "text":"Tem um otimo foco em seus projetos e tarefas, alem de ser determinado e persistente",
+                "text":"Tem um ótimo foco em seus projetos e tarefas, além de ser determinado e persistente. Sempre busca dar o seu melhor, possui um ótimo comprometimento e é alguém inspirador em muitos pontos.",
                 "icon":"atuario"
             },
             {
                 "author":"Gabriele, Turismologa",
-                "text":"É uma honra acompanhar os desdobramentos e a creditar na evolução dele como individuo, amigo e profissional",
+                "text":"É uma honra acompanhar os desdobramentos e acreditar na evolução dele como indivíduo, amigo, pai de pet e profissional. A vida adulta pode ter gerado mais confusão que a adolescência, mas sempre acredite na força do Luiz em ser ele e passar por águas revoltosas, força, empatia e determinação sempre estiveram nos seus fios do destino",
                 "icon":"turismologa"
             },
             {
                 "author":"Gustavo, Desenvolvedor",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text":"Um ótimo colega de trabalho. É ágil no aprendizado de novas tecnologias, sempre buscando evoluir em conhecimento técnico. têm proficiência programando com Python e é bom trabalhando em equipe. também é bom em ensinar pessoas mais novas o passo a passo dos fluxos e sobre boas praticas de programação",
                 "icon":"Dev"
             },
             {
@@ -56,7 +56,7 @@ const home = {
             },
             {
                 "author":"Matheus, Jornalista",
-                "text":"Luiz é uma daquelas pessoas que você pensa em ligar quando o mundo parece que vai se desestruturar aos seus pés.",
+                "text":"Luiz é uma daquelas pessoas que você pensa em ligar quando o mundo parece que vai se desestruturar aos seus pés. A mistura de calma com jocosidade amorosa e ácida que ele traz surte efeito como camomila e ajuda a abrandar a violência marítima dos sentimentos.",
                 "icon":"jornalista"
             },
             {

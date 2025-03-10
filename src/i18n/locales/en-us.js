@@ -36,17 +36,17 @@ const home = {
             },
             {
                 "author": "Ezequiel, Actuary",
-                "text": "He has great focus on his projects and tasks, as well as being determined and persistent",
+                "text": "He has great focus on his projects and tasks, in addition to being determined and persistent. He always strives to give his best, has excellent commitment, and is an inspiring person in many ways.",
                 "icon": "atuario"
             },
             {
                 "author": "Gabriele, Tourismologist",
-                "text": "It is an honor to follow his developments and believe in his evolution as an individual, friend, and professional",
+                "text": "It’s an honor to witness his developments and believe in his growth as an individual, friend, pet parent, and professional. Adulthood may have brought more confusion than adolescence, but always believe in Luiz’s strength to be himself and navigate through turbulent waters. Strength, empathy, and determination have always been woven into his destiny.",
                 "icon": "turismologa"
             },
             {
                 "author": "Gustavo, Developer",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text": "A great coworker. He is quick to learn new technologies, always striving to improve his technical knowledge. He is proficient in programming with Python and works well in a team. He is also good at teaching younger colleagues the step-by-step of workflows and best programming practices.",
                 "icon": "Dev"
             },
             {
@@ -56,7 +56,7 @@ const home = {
             },
             {
                 "author": "Matheus, Journalist",
-                "text": "Luiz is one of those people you think of calling when the world seems like it's about to fall apart at your feet.",
+                "text": "Luiz is one of those people you think of calling when the world feels like it's about to crumble beneath your feet. The combination of calmness with loving and sharp humor that he brings works like chamomile, helping to soothe the turbulent waves of emotions.",
                 "icon": "jornalista"
             },
             {
