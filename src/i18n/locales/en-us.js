@@ -451,6 +451,12 @@ const abilities = {
     "data":{
         "softskill":[
             {
+                "name": "Creativity",
+                "level": 95,
+                "type": "softskill",
+                "description": "Ability to create innovative and effective solutions for various problems and challenges"
+            },
+            {
                 "name": "Systemic Vision",
                 "level": 90,
                 "type": "softskill",
@@ -458,15 +464,9 @@ const abilities = {
             },
             {
                 "name": "Learning",
-                "level": 95,
+                "level": 80,
                 "type": "softskill",
                 "description": "Ability to acquire new knowledge and skills quickly and efficiently, adapting to new situations and challenges"
-            },
-            {
-                "name": "Planning",
-                "level": 70,
-                "type": "softskill",
-                "description": "Ability to organize and structure tasks and activities efficiently, ensuring they are carried out effectively and within the established deadline"
             },
             {
                 "name": "Responsibility",
@@ -481,42 +481,37 @@ const abilities = {
                 "description": "Ability to communicate clearly and effectively with others, conveying information accurately and objectively"
             },
             {
-                "name": "Creativity",
-                "level": 90,
+                "name": "Planning",
+                "level": 70,
                 "type": "softskill",
-                "description": "Ability to create innovative and effective solutions for various problems and challenges"
-            }            
+                "description": "Ability to organize and structure tasks and activities efficiently, ensuring they are carried out effectively and within the established deadline"
+            },
+                        
         ],
         "hardskill":[
             {
-                "name": "UiPath",
-                "level": 50,
+                "name": "React",
+                "level": 95,
                 "type": "hardskill",
-                "description": "Creation of RPAs using the platform to assist with repetitive and manual tasks"
+                "description": "Creation of web pages using the framework and its features"
             },
             {
-                "name": "Botcity",
-                "level": 60,
+                "name": "Python",
+                "level": 90,
                 "type": "hardskill",
-                "description": "Creation of RPAs using the framework to assist with computer vision"
+                "description": "Creation of APIs and automations for various uses, as well as knowledge in creating web pages and full applications using the language"
+            },
+            {
+                "name": "React Native",
+                "level": 85,
+                "type": "hardskill",
+                "description": "Creation of mobile applications using the framework and its features"
             },
             {
                 "name": "Flask",
                 "level": 80,
                 "type": "hardskill",
                 "description": "Creation and management of REST APIs using the framework"
-            },
-            {
-                "name": "React Native",
-                "level": 90,
-                "type": "hardskill",
-                "description": "Creation of mobile applications using the framework and its features"
-            },
-            {
-                "name": "React",
-                "level": 95,
-                "type": "hardskill",
-                "description": "Creation of web pages using the framework and its features"
             },
             {
                 "name": "Postgres",
@@ -531,23 +526,29 @@ const abilities = {
                 "description": "Manipulation and management of databases using SQL language"
             },
             {
-                "name": "MySQL",
-                "level": 60,
-                "type": "hardskill",
-                "description": "Manipulation and management of databases using SQL language"
-            },
-            {
                 "name": "Javascript",
                 "level": 65,
                 "type": "hardskill",
                 "description": "Creation of web and mobile applications using the language and its frameworks, as well as knowledge of creating APIs with the language in the backend"
             },
             {
-                "name": "Python",
-                "level": 90,
+                "name": "Botcity",
+                "level": 60,
                 "type": "hardskill",
-                "description": "Creation of APIs and automations for various uses, as well as knowledge in creating web pages and full applications using the language"
-            }            
+                "description": "Creation of RPAs using the framework to assist with computer vision"
+            },
+            {
+                "name": "MySQL",
+                "level": 60,
+                "type": "hardskill",
+                "description": "Manipulation and management of databases using SQL language"
+            },
+            {
+                "name": "UiPath",
+                "level": 50,
+                "type": "hardskill",
+                "description": "Creation of RPAs using the platform to assist with repetitive and manual tasks"
+            },         
         ]
     }
 }

@@ -121,7 +121,7 @@ export default function CardsComponent({data}){
         >
             <Box
             m={2}
-            width={window.innerWidth > 420 ? (window.innerWidth/4) : (window.innerWidth/1)}
+            width={window.innerWidth > 420 ? (window.innerWidth/2.2) : (window.innerWidth/1)}
             sx={{
                 borderRadius: "20px",
                 border: "1px solid #ccc",
@@ -158,7 +158,7 @@ export default function CardsComponent({data}){
             </Box>
             <Box
             m={2}
-            width={window.innerWidth > 420 ? (window.innerWidth/4) : (window.innerWidth/1)}
+            width={window.innerWidth > 420 ? (window.innerWidth/2.2) : (window.innerWidth/1)}
             sx={{
                 borderRadius: "20px",
                 border: "1px solid #ccc",

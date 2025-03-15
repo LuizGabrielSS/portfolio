@@ -179,7 +179,7 @@ export default function GraphComponent({data}){
                     <BoxesComponent
                     level={softskill.max.level}
                     name={softskill.max.name}
-                    Icon={CodeIcon}
+                    Icon={BrushIcon}
                     iconColor="#4caf50"
                     />
                 </Box>
@@ -187,7 +187,7 @@ export default function GraphComponent({data}){
                     <BoxesComponent
                     level={hardskill.max.level}
                     name={hardskill.max.name}
-                    Icon={BrushIcon}
+                    Icon={CodeIcon}
                     iconColor="#4caf50"
                     />
                 </Box>
