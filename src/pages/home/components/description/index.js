@@ -53,7 +53,7 @@ function BoxThemComponent({Author, Text, Icon, Index}){
                     m={2}
                     >
                         <Typography
-                        variant={window.innerWidth > 420 ? "h4" : 'body2'}
+                        variant={window.innerWidth > 420 ? "h5" : 'body2'}
                         component="div"
                         sx={{
                             color: Index % 2 === 0 ? "text.home_a" : "text.home_b"
@@ -66,7 +66,7 @@ function BoxThemComponent({Author, Text, Icon, Index}){
                     m={2}
                     >
                         <Typography
-                        variant={window.innerWidth > 420 ? "h5" : 'subtitle1'}
+                        variant={window.innerWidth > 420 ? "h6" : 'subtitle1'}
                         component="div"
                         sx={{
                             color: Index % 2 === 0 ? "text.home_a" : "text.home_b"
