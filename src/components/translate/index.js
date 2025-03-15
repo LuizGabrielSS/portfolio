@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Avatar, Box, FormControl, MenuItem, Select } from '@mui/material'
 import UsaVSG from "./usa.svg";
@@ -41,7 +41,14 @@ export function SwitchTranslate(){
 
     const { i18n } = useTranslation()
 
-    const[Value,SetValue] = useState("pt-BR")
+    const defaultLanguage = localStorage.getItem('language') || (["en-US", "pt-BR"].includes(navigator.language) ? navigator.language : "en-US");
+
+    const [Value, SetValue] = useState(defaultLanguage);
+
+    useEffect(() => {
+      localStorage.setItem('language', Value);
+      i18n.changeLanguage(Value);
+    }, [Value]);
 
     function handleChangeLanguage(language) {
       i18n.changeLanguage(language)
