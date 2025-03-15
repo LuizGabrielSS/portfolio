@@ -7,7 +7,7 @@
       // Verifica se a URL já contém o hash para evitar loops
       if (!window.location.hash) {
         // Cria a URL com o hash para redirecionar corretamente
-        const newUrl = window.location.origin + '/#' + window.location.pathname;
+        const newUrl = window.location.origin + '' + window.location.pathname;
         window.location.replace(newUrl);
       }
     </script>
