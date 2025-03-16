@@ -16,7 +16,7 @@ const home = {
         "them": [
             {
                 "author": "Adriana, ACS",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text": "Luiz is an extremely hardworking and dedicated person who always strives for what he believes to be best. He has a strong personality and takes great responsibility in everything he sets out to do, in addition to maintaining high ethical standards in both his professional and personal life.",
                 "icon": "ACS"
             },
             {
@@ -31,7 +31,7 @@ const home = {
             },
             {
                 "author": "Davi, TR",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text": "Responsible person, committed to personal growth, outstanding professional, easy to get along with, well-mannered, and highly recommended!",
                 "icon": "Radiologista"
             },
             {

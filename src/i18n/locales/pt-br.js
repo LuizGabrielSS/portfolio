@@ -16,7 +16,7 @@ const home = {
         "them":[
             {
                 "author":"Adriana, ACS",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text":"Luiz é uma pessoa extremamente esforçada e dedicada ao que ele acredita ser melhor, tem personalidade forte e  muita responsabilidade em tudo que se propõe a fazer,além de muita ética na vida profissional e pessoal",
                 "icon":"ACS"
             },
             {
@@ -31,7 +31,7 @@ const home = {
             },
             {
                 "author":"Davi, TR",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+                "text":"Pessoa responsável,  comprometida com seu crescimento, profissional fora de série,  pessoa de trato fácil  e bem educada, profissional recomendável!",
                 "icon":"Radiologista"
             },
             {
