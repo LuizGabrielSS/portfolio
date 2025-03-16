@@ -385,6 +385,16 @@ const projects = {
     },
     "data":[
         {
+            "name":"BarberPass",
+            "description":"A simple project for a platform in the beauty industry aimed at making life easier for professionals and clients, with the ability to schedule appointments and view professionals' work.",
+            "language":"Javascript",
+            "tech":["react","maps","supabase","render"],
+            "github":"https://github.com/LuizGabrielSS/barberpass",
+            "type":"frontend",
+            "image":"/projects/barberpass.jpeg",
+            "url":"https://luizgabrielss.github.io/barberpass/"
+        },
+        {
             "name": "Agitae",
             "description": "An old project on how to create a possible app to hire parties in a more practical way",
             "language": "Javascript",
