@@ -107,7 +107,7 @@ function BoxMeComponent({Author, Text}){
             >
                 <Typography
                 align='center'
-                variant={window.innerWidth > 420 ? "h5" : 'h6'}
+                variant={window.innerWidth > 420 ? "h5" : 'body1'}
                 component="div"
                 sx={{
                     color: "text.home_b"

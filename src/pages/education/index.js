@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { Box } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 import ContainerComponent from '../../components/container'
+import EmptyComponent from '../../components/empty';
 import StudiesComponent from './components/studies';
-import { useTranslation } from 'react-i18next';
 import SearchComponent from './components/search';
-import { Box } from '@mui/material';
 import FilterComponent from './components/filter';
+
 
 export default function EducationScreen(){
 
@@ -16,7 +18,9 @@ export default function EducationScreen(){
     const[dataStudies,SetDataStudies] = useState(studies)
 
     return(
-        <ContainerComponent>
+        <ContainerComponent
+        fixFooter={dataStudies.length === 0 }
+        >
             <Box
             m={5}
             display='flex'
@@ -44,9 +48,13 @@ export default function EducationScreen(){
             <Box
             width='100%'
             >
-           <StudiesComponent
-            data={dataStudies}
-            />
+                {
+                    dataStudies.length === 0 
+                    ? <EmptyComponent/>
+                    : <StudiesComponent
+                    data={dataStudies}
+                    />
+                }
             </Box>
         </ContainerComponent>
     )

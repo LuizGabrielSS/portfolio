@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import ContainerComponent from '../../components/container';
 import { useTranslation } from 'react-i18next';
+
+import ContainerComponent from '../../components/container';
+import EmptyComponent from '../../components/empty';
 import CardComponent from './components/cards';
 import SearchComponent from './components/search';
 
@@ -13,14 +15,20 @@ export default function ProjectScreen(){
     const[data,setdata] = useState(projects)
 
     return(
-        <ContainerComponent>
+        <ContainerComponent
+        fixFooter={data.length === 0 }
+        >
             <SearchComponent
             original={projects}
             setdata={setdata}
             />
-            <CardComponent
-            data={data}
-            />
+            {
+                data.length === 0 
+                ? <EmptyComponent/>
+                : <CardComponent
+                data={data}
+                />
+            }
         </ContainerComponent>
     )
 

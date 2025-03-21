@@ -19,16 +19,16 @@ const home = {
                 "text": "Luiz is an extremely hardworking and dedicated person who always strives for what he believes to be best. He has a strong personality and takes great responsibility in everything he sets out to do, in addition to maintaining high ethical standards in both his professional and personal life.",
                 "icon": "ACS"
             },
-            {
-                "author": "Alisson, Developer",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "Dev"
-            },
-            {
-                "author": "Alessandro, Lead",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "Tech Lead"
-            },
+            // {
+            //     "author": "Alisson, Developer",
+            //     "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon": "Dev"
+            // },
+            // {
+            //     "author": "Alessandro, Lead",
+            //     "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon": "Tech Lead"
+            // },
             {
                 "author": "Davi, TR",
                 "text": "Responsible person, committed to personal growth, outstanding professional, easy to get along with, well-mannered, and highly recommended!",
@@ -49,26 +49,26 @@ const home = {
                 "text": "A great coworker. He is quick to learn new technologies, always striving to improve his technical knowledge. He is proficient in programming with Python and works well in a team. He is also good at teaching younger colleagues the step-by-step of workflows and best programming practices.",
                 "icon": "Dev"
             },
-            {
-                "author": "Louise, Philosopher",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "filosofa"
-            },
+            // {
+            //     "author": "Louise, Philosopher",
+            //     "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon": "filosofa"
+            // },
             {
                 "author": "Matheus, Journalist",
                 "text": "Luiz is one of those people you think of calling when the world feels like it's about to crumble beneath your feet. The combination of calmness with loving and sharp humor that he brings works like chamomile, helping to soothe the turbulent waves of emotions.",
                 "icon": "jornalista"
             },
-            {
-                "author": "Pedro, Tech Lead",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "Tech Lead"
-            },
-            {
-                "author": "Roberto, Developer",
-                "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon": "Dev"
-            }
+            // {
+            //     "author": "Pedro, Tech Lead",
+            //     "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon": "Tech Lead"
+            // },
+            // {
+            //     "author": "Roberto, Developer",
+            //     "text": "Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon": "Dev"
+            // }
         ]
     }
 }
@@ -578,7 +578,11 @@ const Translation = {
         "school":school,
         "projects":projects,
         "abilities":abilities,
-        "notfound":notfound
+        "notfound":notfound,
+        "empty": {
+            "title": "Oops... it looks like we don't have anything here",
+            "description": "Unfortunately, we couldn't find anything to show here. If you were looking for something specific, please get in touch so we can identify what was missing."
+        }
     }
 }
 

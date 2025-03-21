@@ -19,16 +19,16 @@ const home = {
                 "text":"Luiz é uma pessoa extremamente esforçada e dedicada ao que ele acredita ser melhor, tem personalidade forte e  muita responsabilidade em tudo que se propõe a fazer,além de muita ética na vida profissional e pessoal",
                 "icon":"ACS"
             },
-            {
-                "author":"Alisson, Desenvolvedor",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Dev"
-            },
-            {
-                "author":"Alessandro, Lider",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Tech Lead"
-            },
+            // {
+            //     "author":"Alisson, Desenvolvedor",
+            //     "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon":"Dev"
+            // },
+            // {
+            //     "author":"Alessandro, Lider",
+            //     "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon":"Tech Lead"
+            // },
             {
                 "author":"Davi, TR",
                 "text":"Pessoa responsável,  comprometida com seu crescimento, profissional fora de série,  pessoa de trato fácil  e bem educada, profissional recomendável!",
@@ -49,26 +49,26 @@ const home = {
                 "text":"Um ótimo colega de trabalho. É ágil no aprendizado de novas tecnologias, sempre buscando evoluir em conhecimento técnico. têm proficiência programando com Python e é bom trabalhando em equipe. também é bom em ensinar pessoas mais novas o passo a passo dos fluxos e sobre boas praticas de programação",
                 "icon":"Dev"
             },
-            {
-                "author":"Louise, Filosofa",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"filosofa"
-            },
+            // {
+            //     "author":"Louise, Filosofa",
+            //     "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon":"filosofa"
+            // },
             {
                 "author":"Matheus, Jornalista",
                 "text":"Luiz é uma daquelas pessoas que você pensa em ligar quando o mundo parece que vai se desestruturar aos seus pés. A mistura de calma com jocosidade amorosa e ácida que ele traz surte efeito como camomila e ajuda a abrandar a violência marítima dos sentimentos.",
                 "icon":"jornalista"
             },
-            {
-                "author":"Pedro, Tech Lead",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Tech Lead"
-            },  
-            {
-                "author":"Roberto, Desenvolvedor",
-                "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
-                "icon":"Dev"
-            },        
+            // {
+            //     "author":"Pedro, Tech Lead",
+            //     "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon":"Tech Lead"
+            // },  
+            // {
+            //     "author":"Roberto, Desenvolvedor",
+            //     "text":"Lorem ipsum dolor sit amet. Vel galisum cumque et accusantium unde in autem distinctio. Nam quas quasi et dolorum omnis id molestias laborum aut facilis recusandae!",
+            //     "icon":"Dev"
+            // },        
         ]
     }
     }
@@ -580,7 +580,11 @@ const Translation = {
         "school":school,
         "projects":projects,
         "abilities":abilities,
-        "notfound":notfound
+        "notfound":notfound,
+        "empty":{
+            "title":"Ops... parece que não temos nada aqui",
+            "description":"Infelizmente não encontramos nada para mostrar aqui, se procurava algo especifico, por favor, entre em contato para que possa identificar o que estava faltando"
+        }
     }
 }
 
