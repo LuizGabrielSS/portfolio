@@ -401,7 +401,7 @@ const projects = {
             "tech": ["react-native", "expo"],
             "github": "https://github.com/LuizGabrielSS/Agitae2.0",
             "type": "mobile",
-            "image": "projects/agitae.jpeg",
+            "image":"/projects/agitae.jpeg",
             "url":null
         },
         {
@@ -411,7 +411,7 @@ const projects = {
             "tech": ["react-native", "axios", "expo"],
             "github": "https://github.com/LuizGabrielSS/Expo-CEP",
             "type": "mobile",
-            "image": "projects/expo_cep.jpeg",
+            "image": "/projects/expo_cep.jpeg",
             "url":null
         },
         {
@@ -422,7 +422,7 @@ const projects = {
             "github": "https://github.com/LuizGabrielSS/pokedex",
             "type": "frontend",
             "url": "https://luizgabrielss.github.io/pokedex/",
-            "image": "projects/pokedex.jpeg"
+            "image": "/projects/pokedex.jpeg"
         },
         {
             "name": "Web Recipes",
@@ -432,7 +432,7 @@ const projects = {
             "github": "https://github.com/LuizGabrielSS/receitas-web",
             "type": "frontend",
             "url": "https://luizgabrielss.github.io/receitas-web/",
-            "image": "projects/receitas.jpeg"
+            "image": "/projects/receitas.jpeg"
         },
         {
             "name": "Movies Web",
@@ -442,7 +442,7 @@ const projects = {
             "github": "https://github.com/LuizGabrielSS/movies-web",
             "type": "frontend",
             "url": "https://luizgabrielss.github.io/movies-web/",
-            "image": "projects/movies.jpeg"
+            "image": "/projects/movies.jpeg"
         },
         {
             "name": "Lazy Dev",
@@ -451,7 +451,7 @@ const projects = {
             "tech": ["hugging face", "translate"],
             "github": "https://github.com/LuizGabrielSS/lazy-dev",
             "type": "backend",
-            "image": "projects/lazy.jpeg",
+            "image": "/projects/lazy.jpeg",
             "url":null
         }
     ]

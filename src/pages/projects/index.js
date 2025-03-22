@@ -9,11 +9,12 @@ import SearchComponent from './components/search';
 
 export default function ProjectScreen(){
     
-    console.log("Renderizou o componente!");
-
     const { t, i18n } = useTranslation();
+    
     const [projects, setProjects] = useState([]);
+    
     const[data,setdata] = useState(projects)
+
     useEffect(() => {
         const projeto = t('projects.data', { returnObjects: true })
         // Atualiza os projetos toda vez que o idioma mudar

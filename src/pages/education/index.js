@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
@@ -11,11 +11,20 @@ import FilterComponent from './components/filter';
 
 export default function EducationScreen(){
 
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation();
 
-    const studies = t('school.formation',{returnObjects: true})
+    const [studies,setstudies] = useState([])
 
     const[dataStudies,SetDataStudies] = useState(studies)
+
+    useEffect(() => {
+        const projeto = t('school.formation',{returnObjects: true})   
+        // Atualiza os projetos toda vez que o idioma mudar
+        setstudies(projeto);
+        SetDataStudies(projeto)
+    }, [i18n.language, t]); // Depende do idioma atual e da função t
+
+    //
 
     return(
         <ContainerComponent
