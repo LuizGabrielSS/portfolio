@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import { Box, Card, CardActions, CardContent, CardMedia, Chip, IconButton, Typography } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
@@ -21,7 +21,7 @@ function GenerateColor(text){
 
 }
 
-function BoxesComponent({name, description, language, tech, github, type, image, url}){
+const BoxesComponent = memo(function BoxesComponent({name, description, language, tech, github, type, image, url}){
 
     return(
         <Box
@@ -75,9 +75,9 @@ function BoxesComponent({name, description, language, tech, github, type, image,
                             tech.map((tag, index) => (
                                 <Box
                                 m={1}
+                                key={index}
                                 >
                                     <Chip
-                                    key={index}
                                     label={tag}
                                     style={{backgroundColor: GenerateColor(tag)}}
                                     />
@@ -113,12 +113,17 @@ function BoxesComponent({name, description, language, tech, github, type, image,
                     component="img"
                     image={`${process.env.PUBLIC_URL}${image}`}
                     title={name}
+                    sx={{
+                        width: window.innerWidth > 420 ? "40%" : "50%",
+                        height: window.innerWidth > 420 ? (window.innerHeight*5/10) : (window.innerHeight*7/10),
+                        borderRadius: "20px",
+                    }}
                     />
             </Card>
         </Box>
     )
 
-}
+});
 
 export default function CardComponent({data}){
 

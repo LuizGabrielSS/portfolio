@@ -10,9 +10,7 @@ function App() {
 
   const theme = useSelector((state) => state.mode.mode);
 
-  const darkTheme = createTheme({
-    palette: theme,
-  });
+  const darkTheme = React.useMemo(() => createTheme({ palette: theme }), [theme]);
 
   return (
     <ThemeProvider theme={darkTheme}>

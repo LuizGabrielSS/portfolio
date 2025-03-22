@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Box, TextField } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import SearchIcon from '@mui/icons-material/Search';
 
+import Translator from '../../../../components/translate';
 
 export default function SearchComponent({original,setdata}){
-
-    const { t } = useTranslation()
 
     const [SearchText,setSearchText] = useState("")
 
@@ -25,8 +23,7 @@ export default function SearchComponent({original,setdata}){
         m={5}
         >
             <TextField
-            label={t('projects.search.label')}
-            placeholder={t('projects.search.placeholder')}
+            label={<Translator path='projects.search.label' />}
             onChange={(value) => {searchFunction(value.target.value)}}
             value={SearchText}
             fullWidth

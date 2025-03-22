@@ -1,10 +1,8 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import { useTranslation } from 'react-i18next'
+import Translator from '../translate'
 
-export default function EmptyComponent(){
-
-    const { t } = useTranslation()
+export default function EmptyComponent({t}){
 
     return(
         <Box
@@ -36,7 +34,7 @@ export default function EmptyComponent(){
                     color: "text.back"
                 }}
                 >
-                    {t('empty.title')}
+                    <Translator path='empty.title'/>
                 </Typography>
                 <Typography
                 variant={window.innerWidth > 420 ? "h5" : 'subtitle1'}
@@ -46,7 +44,7 @@ export default function EmptyComponent(){
                     color: "text.back"
                 }}
                 >
-                    {t('empty.description')}
+                    <Translator path='empty.description'/>
                 </Typography>
                 </Box>
             </Box>

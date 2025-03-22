@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next'
 
+import TranslatorData from '../../components/translate';
 import ContainerComponent from '../../components/container';
 import EmptyComponent from '../../components/empty';
 import CardComponent from './components/cards';
 import SearchComponent from './components/search';
 
 export default function ProjectScreen(){
-
-    const { t } = useTranslation()
     
-    const projects = t('projects.data',{returnObjects: true})
+    console.log("Renderizou o componente!");
 
+    const { t, i18n } = useTranslation();
+    const [projects, setProjects] = useState([]);
     const[data,setdata] = useState(projects)
+    useEffect(() => {
+        const projeto = t('projects.data', { returnObjects: true })
+        // Atualiza os projetos toda vez que o idioma mudar
+        setProjects(projeto);
+        setdata(projeto)
+    }, [i18n.language, t]); // Depende do idioma atual e da função t
 
     return(
         <ContainerComponent
-        fixFooter={data.length === 0 }
+        fixFooter={data.length === 0}
         >
             <SearchComponent
             original={projects}
@@ -24,7 +31,8 @@ export default function ProjectScreen(){
             />
             {
                 data.length === 0 
-                ? <EmptyComponent/>
+                ? <EmptyComponent
+                />
                 : <CardComponent
                 data={data}
                 />

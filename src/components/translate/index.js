@@ -4,12 +4,19 @@ import { Avatar, Box, FormControl, MenuItem, Select } from '@mui/material'
 import UsaVSG from "./usa.svg";
 import BraVSG from "./brasil.svg"
 
-const Translator = ({ path }) => {
-    const { t } = useTranslation()
-    return t(path)
-  }
 
+const Translator = React.memo(({ path }) => {
+  const { t } = useTranslation();
+  return t(path);
+});
+
+const TranslatorData = React.memo(({ path }) => {
+  const { t } = useTranslation();
+  return t(path, { returnObjects: true });
+});
 export default Translator
+
+export {TranslatorData};
 
 function ItemComponent({Imagem}){
 
@@ -37,56 +44,58 @@ function ItemComponent({Imagem}){
 
 }
 
-export function SwitchTranslate(){
+export function SwitchTranslate() {
+  const { i18n } = useTranslation();
 
-    const { i18n } = useTranslation()
+  // Verifica se já há um idioma salvo ou pega o idioma do navegador
+  const defaultLanguage =
+    localStorage.getItem("language") ||
+    (["en-US", "pt-BR"].includes(navigator.language) ? navigator.language : "en-US");
 
-    const defaultLanguage = localStorage.getItem('language') || (["en-US", "pt-BR"].includes(navigator.language) ? navigator.language : "en-US");
+  const [Value, SetValue] = useState(defaultLanguage);
 
-    const [Value, SetValue] = useState(defaultLanguage);
-
-    useEffect(() => {
-      localStorage.setItem('language', Value);
-      i18n.changeLanguage(Value);
-    }, [Value]);
-
-    function handleChangeLanguage(language) {
-      i18n.changeLanguage(language)
-      SetValue(language)
+  // Sempre que o idioma for alterado, o estado e o localStorage são atualizados
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage && savedLanguage !== i18n.language) {
+      // Muda o idioma no i18n
+      i18n.changeLanguage(savedLanguage);
+      SetValue(savedLanguage); // Atualiza o estado com o idioma salvo
     }
+  }, [i18n]);
 
-    return(
-      <Box
-      mx={2}
-      my={1}
-      >
-        <FormControl>
-          <Select
+  function handleChangeLanguage(language) {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+    SetValue(language); // Atualiza o estado com o idioma selecionado
+  }
+
+  return (
+    <Box mx={2} my={1}>
+      <FormControl>
+        <Select
           autoWidth
-          value={Value}
-          onChange={(value) => handleChangeLanguage(value.target.value)}>
-            <MenuItem
-              value="en-US"
-            > <ItemComponent
-            Imagem={UsaVSG}
-            Nome="English"
-            Value={Value}
-            valor="en-US"
+          value={Value} // Usa o estado Value aqui
+          onChange={(e) => handleChangeLanguage(e.target.value)} // Passa o valor diretamente
+        >
+          <MenuItem value="en-US">
+            <ItemComponent
+              Imagem={UsaVSG}
+              Nome="English"
+              Value={Value}
+              valor="en-US"
             />
           </MenuItem>
-          <MenuItem
-            value="pt-BR"
-          >
+          <MenuItem value="pt-BR">
             <ItemComponent
-            Imagem={BraVSG}
-            Nome="Português"
-            Value={Value}
-            valor="pt-BR"
+              Imagem={BraVSG}
+              Nome="Português"
+              Value={Value}
+              valor="pt-BR"
             />
           </MenuItem>
         </Select>
-        </FormControl>
-      </Box>
-    )
-
+      </FormControl>
+    </Box>
+  );
 }
