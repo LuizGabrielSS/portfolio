@@ -1,7 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next'
 
-import TranslatorData from '../../components/translate';
 import ContainerComponent from '../../components/container';
 import EmptyComponent from '../../components/empty';
 import CardComponent from './components/cards';

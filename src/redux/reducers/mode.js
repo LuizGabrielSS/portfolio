@@ -48,14 +48,20 @@ const Dark_Pallet = {
     }
 }
 
+const getSavedTheme = () => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "dark" ? Dark_Pallet : Light_Pallet;
+  };
+
 export const modeSlice = createSlice({
     name: 'mode',
     initialState:{
-        mode:Light_Pallet
+        mode: getSavedTheme(),
     },
     reducers:{
         ChangeMode: (state, action) => {
-            state.mode = action.payload ? Dark_Pallet : Light_Pallet
+            state.mode = action.payload ? Dark_Pallet : Light_Pallet;
+            localStorage.setItem("theme", action.payload ? "dark" : "light");
         }
     }
 })
